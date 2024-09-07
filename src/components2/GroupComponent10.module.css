@@ -1,0 +1,49 @@
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 18.8px 47.08px rgba(47, 50, 125, 0.1);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 374px;
+  height: 617px;
+}
+.awsCertifiedSolutions,
+.loremIpsumDolor {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+}
+.awsCertifiedSolutions {
+  top: 0;
+  font-weight: 500;
+  width: 324px;
+  height: 77px;
+}
+.loremIpsumDolor {
+  top: 98px;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.02em;
+  line-height: 180%;
+  color: var(--color-slategray-100);
+  width: 328px;
+  height: 102px;
+}
+.awsCertifiedSolutionsArchitParent,
+.rectangleParent {
+  position: absolute;
+  top: 321px;
+  left: 27px;
+  width: 328px;
+  height: 200px;
+}
+.rectangleParent {
+  top: 0;
+  left: 0;
+  width: 374px;
+  height: 617px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-poppins);
+}

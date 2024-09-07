@@ -1,0 +1,22 @@
+{
+    "login": {
+        "welcome": "Welcome to my dynamic academics, sign in and learn online like you’ve never learnt before.",
+        "login": "Login",
+        "register": "Register",
+        "welcome-text": "Welcome to MDA..",
+        "welcome-subtitle": "When education meets technology",
+        "learn-online": "Learn Online",
+        "username": "Username",
+        "password": "Password",
+        "forgot-password": "Forgot Password?",
+        "remember-me": "Remember Me",
+        "enter-username": "Enter Your Username",
+        "enter-password": "Enter Your Password",
+        "email": "Email",
+        "enter-email": "Enter Your Email"
+    },
+    "cards":{
+        "welcome":"Hi! Student Name"
+    }
+
+}

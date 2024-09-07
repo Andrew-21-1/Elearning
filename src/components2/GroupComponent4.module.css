@@ -1,0 +1,125 @@
+.frameChild,
+.imagePlaceholderIcon {
+  border-radius: var(--br-xl);
+  max-width: 100%;
+}
+.frameChild {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  background-color: var(--color-silver);
+  display: none;
+  z-index: 0;
+}
+.imagePlaceholderIcon {
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.imagePlaceholder,
+.imagePlaceholderIcon,
+.imagePlaceholderParent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.imagePlaceholder {
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-600);
+  z-index: 2;
+}
+.imagePlaceholderParent {
+  margin: 0 !important;
+}
+.forStudents {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  z-index: 3;
+}
+.studentLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-7xl) 0 var(--padding-6xl);
+}
+.frameItem {
+  height: 80px;
+  width: 283px;
+  position: relative;
+  border-radius: var(--br-61xl);
+  background-color: var(--color-firebrick-100);
+  display: none;
+}
+.enterAccessCode {
+  position: relative;
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+  z-index: 1;
+}
+.rectangleGroup,
+.rectangleParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.rectangleGroup {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xl) var(--padding-21xl) var(--padding-4xl);
+  background-color: var(--color-firebrick-100);
+  border-radius: var(--br-61xl);
+  flex-direction: row;
+  align-items: flex-start;
+  white-space: nowrap;
+  z-index: 3;
+}
+.rectangleGroup:hover {
+  background-color: var(--color-coral-100);
+}
+.rectangleParent {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--color-silver);
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-113xl) var(--padding-xl) var(--padding-104xl)
+    var(--padding-2xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-mid);
+  min-width: 450px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 800px) {
+  .forStudents {
+    font-size: var(--font-size-7xl);
+  }
+  .rectangleParent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .forStudents {
+    font-size: var(--font-size-lgi);
+  }
+  .rectangleParent {
+    padding-top: var(--padding-67xl);
+    padding-bottom: var(--padding-61xl);
+    box-sizing: border-box;
+  }
+}

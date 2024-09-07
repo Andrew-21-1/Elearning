@@ -1,0 +1,135 @@
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-14xl);
+  background-color: var(--color-gray-500);
+  width: 329px;
+  height: 59px;
+}
+.login {
+  position: absolute;
+  top: 18px;
+  left: 72px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.groupItem {
+  position: absolute;
+  top: 10px;
+  left: 171px;
+  border-radius: var(--br-14xl);
+  width: 146px;
+  height: 40px;
+}
+.register {
+  position: absolute;
+  top: 18px;
+  left: 211px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 329px;
+  height: 59px;
+}
+.welcomeToMda {
+  position: absolute;
+  top: 0;
+  left: 86px;
+}
+.groupContainer,
+.groupInner {
+  position: absolute;
+  top: 0;
+  left: 53px;
+  width: 329px;
+  height: 107px;
+}
+.groupInner {
+  top: 36px;
+  left: 0;
+  border-radius: var(--br-21xl);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightseagreen-100);
+  box-sizing: border-box;
+  width: 435px;
+  height: 54px;
+}
+.enterYourUser,
+.userName {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.enterYourUser {
+  top: 51px;
+  left: 31px;
+  font-size: var(--font-size-mini);
+  font-weight: 300;
+  color: var(--color-darkgray-100);
+}
+.groupChild1,
+.rectangleContainer,
+.rectangleGroup {
+  position: absolute;
+  top: 360px;
+  left: 0;
+  width: 435px;
+  height: 90px;
+}
+.groupChild1,
+.rectangleContainer {
+  top: 240px;
+}
+.groupChild1 {
+  top: 0;
+  border-radius: var(--br-17xl);
+  background-color: var(--color-black);
+  width: 232px;
+  height: 49px;
+}
+.register1 {
+  position: absolute;
+  top: 13px;
+  left: 94px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.groupButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 625px;
+  left: 203px;
+  width: 232px;
+  height: 49px;
+}
+.groupParent {
+  position: absolute;
+  top: 113px;
+  left: 889px;
+  width: 435px;
+  height: 674px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

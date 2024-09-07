@@ -1,0 +1,99 @@
+.maskGroupIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frameChild {
+  height: 16.4px;
+  width: 63.8px;
+  position: relative;
+  backdrop-filter: blur(8.4px);
+  border-radius: var(--br-8xs-2);
+  background-color: var(--color-lightsteelblue-200);
+  display: none;
+}
+.frameInner,
+.frameItem,
+.rectangleDiv {
+  position: absolute;
+  top: 2.9px;
+  left: 0;
+  border-radius: 0.42px;
+  background-color: var(--color-white);
+  width: 1.3px;
+  height: 2.9px;
+}
+.frameInner,
+.rectangleDiv {
+  top: 1.5px;
+  left: 2.1px;
+  height: 4.4px;
+}
+.rectangleDiv {
+  top: 0;
+  left: 4.2px;
+  height: 5.9px;
+}
+.rectangleGroup {
+  width: 5.5px;
+  height: 5.9px;
+  position: relative;
+  z-index: 1;
+}
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.adamLevin {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 46px;
+  z-index: 1;
+}
+.maskGroupParent,
+.namesParent,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.namesParent {
+  gap: var(--gap-8xs-2);
+}
+.maskGroupParent,
+.rectangleParent {
+  z-index: 1;
+}
+.rectangleParent {
+  backdrop-filter: blur(8.4px);
+  border-radius: var(--br-8xs-2);
+  background-color: var(--color-lightsteelblue-200);
+  padding: var(--padding-10xs-5) var(--padding-10xs) var(--padding-10xs-9)
+    var(--padding-9xs);
+}
+.maskGroupParent {
+  position: absolute;
+  top: 70.2px;
+  left: 499.9px;
+  width: 126px;
+  padding: var(--padding-79xl-7) var(--padding-7xs) var(--padding-6xs-7);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-4xs-4);
+  color: var(--color-white);
+  font-family: var(--font-nunito-sans);
+}

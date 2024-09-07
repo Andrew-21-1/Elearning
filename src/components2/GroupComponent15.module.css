@@ -1,0 +1,165 @@
+.groupChild,
+.groupItem {
+  position: absolute;
+  border-radius: var(--br-14xl);
+}
+.groupChild {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-500);
+  top: 0;
+  left: 0;
+  width: 329px;
+  height: 59px;
+}
+.groupItem {
+  top: 10px;
+  left: 13px;
+  width: 146px;
+  height: 40px;
+}
+.login {
+  position: absolute;
+  top: 18px;
+  left: 64px;
+  font-weight: 500;
+}
+.rectangleParent,
+.register {
+  position: absolute;
+  top: 18px;
+  left: 204px;
+}
+.rectangleParent {
+  top: 48px;
+  left: 0;
+  width: 329px;
+  height: 59px;
+}
+.groupContainer,
+.welcomeToMda {
+  position: absolute;
+  top: 0;
+  left: 86px;
+  color: var(--color-black);
+}
+.groupContainer {
+  left: 53px;
+  width: 329px;
+  height: 107px;
+  color: var(--color-white);
+}
+.groupInner {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  border-radius: var(--br-21xl);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightseagreen-100);
+  box-sizing: border-box;
+  width: 435px;
+  height: 54px;
+}
+.enterYourUser,
+.userName {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.enterYourUser {
+  top: 51px;
+  left: 31px;
+  font-size: var(--font-size-mini);
+  font-weight: 300;
+  color: var(--color-darkgray-100);
+}
+.rectangleGroup,
+.welcomeToMy {
+  position: absolute;
+  top: 91px;
+  left: 0;
+  width: 435px;
+  height: 90px;
+}
+.welcomeToMy {
+  top: 0;
+  color: var(--color-gainsboro-200);
+  display: inline-block;
+  width: 454px;
+  height: 49px;
+}
+.groupDiv,
+.rectangleInput {
+  position: absolute;
+  top: 159px;
+  left: 0;
+  width: 454px;
+  height: 301px;
+}
+.rectangleInput {
+  margin: 0;
+  top: 3px;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+}
+.forgotPassword,
+.rememebrMe {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-weight: 300;
+}
+.forgotPassword {
+  left: 324px;
+}
+.rectangleContainer {
+  position: absolute;
+  top: 482px;
+  left: 0;
+  width: 432px;
+  height: 18px;
+  font-size: var(--font-size-xs);
+}
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-17xl);
+  background-color: var(--color-black);
+  width: 232px;
+  height: 49px;
+}
+.login1 {
+  position: absolute;
+  top: 13px;
+  left: 94px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.groupButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 562px;
+  left: 203px;
+  width: 232px;
+  height: 49px;
+}
+.groupParent {
+  position: absolute;
+  top: 145px;
+  left: 889px;
+  width: 454px;
+  height: 611px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

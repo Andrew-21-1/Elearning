@@ -1,0 +1,46 @@
+.groupChild,
+.groupItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.groupChild {
+  box-shadow: 0 18.8px 47.08px rgba(47, 50, 125, 0.1);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 529px;
+  height: 474px;
+}
+.groupItem {
+  width: 486.4px;
+  height: 258.4px;
+  object-fit: cover;
+}
+.awsCertifiedSolutions {
+  position: absolute;
+  top: 270.4px;
+  left: 3.4px;
+  line-height: 180%;
+  font-weight: 500;
+  display: inline-block;
+  width: 412px;
+  height: 48px;
+}
+.groupParent,
+.rectangleParent {
+  position: absolute;
+  top: 19.6px;
+  left: 21.6px;
+  width: 486.4px;
+  height: 318.4px;
+}
+.rectangleParent {
+  top: 0;
+  left: 0;
+  width: 529px;
+  height: 474px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-sienna);
+  font-family: var(--font-poppins);
+}

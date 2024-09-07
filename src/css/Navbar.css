@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #bf4628 !important;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #612d29;
+  font-family: "Livvic";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 900 !important;
+  line-height: normal;
+  letter-spacing: 0.44px;
+}
+.navbar-collapse {
+  display: flex;
+  margin-left: 50px;
+}
+
+.nav-link {
+  display: flex;
+  margin: 15px;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: white; /* Change to white on hover and when selected */
+}
+.navbar a {
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition */
+}

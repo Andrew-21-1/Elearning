@@ -1,0 +1,55 @@
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 18.8px 47.08px rgba(47, 50, 125, 0.1);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 349px;
+  height: 377px;
+}
+.groupItem {
+  position: absolute;
+  top: 30px;
+  left: 129px;
+  border-radius: var(--br-9xs);
+  width: 90px;
+  height: 90px;
+}
+.design,
+.loremIpsumDolor {
+  position: absolute;
+  letter-spacing: 0.02em;
+}
+.design {
+  top: 140px;
+  left: 120px;
+  font-weight: 600;
+}
+.loremIpsumDolor {
+  top: 210px;
+  left: 32px;
+  font-size: var(--font-size-lg);
+  color: var(--color-slategray-100);
+  text-align: center;
+  display: inline-block;
+  width: 285px;
+}
+.div,
+.rectangleParent {
+  position: absolute;
+  top: 57px;
+  left: 159px;
+  font-family: var(--font-font-awesome-5-free);
+  color: var(--color-lightseagreen-100);
+}
+.rectangleParent {
+  top: 0;
+  left: 0;
+  width: 349px;
+  height: 377px;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

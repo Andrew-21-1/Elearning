@@ -1,0 +1,51 @@
+.groupChild,
+.password {
+  position: absolute;
+  left: 0;
+}
+.groupChild {
+  top: 36px;
+  border-radius: var(--br-21xl);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightseagreen-100);
+  box-sizing: border-box;
+  width: 435px;
+  height: 54px;
+}
+.password {
+  top: 0;
+}
+.enterYourPassword {
+  position: absolute;
+  top: 51px;
+  left: 31px;
+  font-size: var(--font-size-mini);
+  font-weight: 300;
+  color: var(--color-darkgray-100);
+}
+.invisible1Icon,
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 435px;
+  height: 90px;
+}
+.invisible1Icon {
+  top: 54px;
+  left: 389px;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+.groupParent {
+  position: absolute;
+  top: 211px;
+  left: 0;
+  width: 435px;
+  height: 90px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

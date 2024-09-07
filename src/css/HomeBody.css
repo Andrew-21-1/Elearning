@@ -1,0 +1,59 @@
+.home-banner {
+  background: url("../assets/images/headerbg.png") no-repeat center center;
+  background-size: cover; /* Ensures the background image covers the entire width and height */
+  height: 100vh; /* The height will remain consistent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  width: 100vw; /* Ensures the container spans the full width of the viewport */
+  margin: 0;
+  padding: 0;
+}
+.text {
+  color: #fff;
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+}
+
+.home-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+.header-img-container {
+  height: "100vh" !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.home-banner p {
+  font-size: 1.5rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.animated-section {
+  min-height: 400px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.animated-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,60 @@
+.footerChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-darksalmon);
+  width: 1920px;
+  height: 593px;
+}
+.classTechnologiesInc {
+  position: absolute;
+  top: 520px;
+  left: 781px;
+  letter-spacing: 0.04em;
+}
+.groupChild,
+.groupItem {
+  position: absolute;
+  top: 8px;
+  left: 113px;
+  border-right: 1px solid var(--color-slategray-200);
+  box-sizing: border-box;
+  width: 1px;
+  height: 18px;
+}
+.groupItem {
+  left: 314px;
+}
+.careers,
+.privacyPolicy,
+.termsConditions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.04em;
+}
+.privacyPolicy,
+.termsConditions {
+  left: 133px;
+}
+.termsConditions {
+  left: 334px;
+}
+.footer,
+.lineParent {
+  position: absolute;
+  top: 467px;
+  left: 678px;
+  width: 564px;
+  height: 33px;
+}
+.footer {
+  top: 4536px;
+  left: 1px;
+  width: 1920px;
+  height: 593px;
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  color: var(--color-lightsteelblue-100);
+  font-family: var(--font-poppins);
+}

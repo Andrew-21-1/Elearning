@@ -1,0 +1,90 @@
+.maskGroupIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frameChild {
+  height: 21.6px;
+  width: 97.1px;
+  position: relative;
+  backdrop-filter: blur(11.09px);
+  border-radius: 5.55px;
+  background-color: var(--color-lightsteelblue-200);
+  display: none;
+}
+.clarkeRating,
+.hollandRating,
+.mendozaRating {
+  position: absolute;
+  top: 3.9px;
+  left: 0;
+  border-radius: 0.55px;
+  background-color: var(--color-white);
+  width: 1.7px;
+  height: 3.9px;
+}
+.hollandRating,
+.mendozaRating {
+  top: 2px;
+  left: 2.7px;
+  height: 5.8px;
+}
+.mendozaRating {
+  top: 0;
+  left: 5.5px;
+  height: 7.8px;
+}
+.clarkeRatingParent {
+  width: 7.2px;
+  height: 7.8px;
+  position: relative;
+  z-index: 1;
+}
+.frameWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs-9) 0 0;
+}
+.tamaraClarke {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 73.2px;
+  z-index: 1;
+}
+.maskGroupParent,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangleParent {
+  backdrop-filter: blur(11.09px);
+  border-radius: 5.55px;
+  background-color: var(--color-lightsteelblue-200);
+  padding: var(--padding-9xs-3) var(--padding-8xs);
+  gap: var(--gap-7xs-5);
+  z-index: 1;
+}
+.maskGroupParent {
+  align-self: stretch;
+  padding: var(--padding-111xl-3) var(--padding-5xs) var(--padding-4xs-9);
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--font-size-xs-1);
+  color: var(--color-white);
+  font-family: var(--font-nunito-sans);
+}

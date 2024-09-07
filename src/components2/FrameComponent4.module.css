@@ -1,0 +1,223 @@
+.invoicingControlScheduleChild {
+  width: 450px;
+  height: 430px;
+  position: relative;
+  box-shadow: 0 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.onlineBillingInvoicing {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.simpleAndSecure {
+  flex: 1;
+  position: relative;
+  line-height: 180%;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.scheduleReserveAutomate {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-xl);
+  color: var(--color-slategray-100);
+}
+.invoicingControlScheduleItem {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 0 !important;
+  top: -57px;
+  left: calc(50% - 50px);
+  z-index: 1;
+}
+.invoicingControlSchedule {
+  flex: 0.9098;
+  box-shadow: 0 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-103xl) var(--padding-34xl) var(--padding-31xl)
+    var(--padding-35xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-5xl);
+  min-width: 337px;
+  max-width: 100%;
+}
+.easyScheduling {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.easySchedulingAttendanceTWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid) 0 var(--padding-mini);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.scheduleAndReserve {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 180%;
+  color: var(--color-slategray-100);
+  z-index: 1;
+}
+.invoicingControlSchedule1 {
+  flex: 1;
+  box-shadow: 0 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-103xl) var(--padding-17xl) var(--padding-31xl)
+    var(--padding-18xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-5xl);
+  min-width: 337px;
+  max-width: 100%;
+}
+.customerTracking {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.customerTrackingWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-sm) 0 var(--padding-mini);
+}
+.invoicingControlSchedule2 {
+  flex: 0.8462;
+  box-shadow: 0 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-130xl) var(--padding-47xl) var(--padding-31xl)
+    var(--padding-46xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-23xl);
+  min-width: 337px;
+  max-width: 100%;
+}
+.invoicingControlScheduleParent,
+.landingInner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.invoicingControlScheduleParent {
+  width: 1470px;
+  gap: var(--gap-41xl);
+}
+.landingInner {
+  align-self: stretch;
+  padding: 0 var(--padding-xl) var(--padding-123xl);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-darkslateblue-100);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1300px) {
+  .invoicingControlScheduleParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .customerTracking,
+  .easyScheduling,
+  .onlineBillingInvoicing {
+    font-size: var(--font-size-5xl);
+  }
+  .invoicingControlScheduleParent {
+    gap: var(--gap-11xl);
+  }
+  .landingInner {
+    padding-bottom: var(--padding-73xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .onlineBillingInvoicing {
+    font-size: var(--font-size-lg);
+  }
+  .simpleAndSecure {
+    font-size: var(--font-size-base);
+    line-height: 29px;
+  }
+  .invoicingControlSchedule {
+    padding: var(--padding-60xl) var(--padding-xl) var(--padding-13xl);
+    box-sizing: border-box;
+    min-width: 100%;
+    flex: 1;
+  }
+  .easyScheduling {
+    font-size: var(--font-size-lg);
+  }
+  .scheduleAndReserve {
+    font-size: var(--font-size-base);
+    line-height: 29px;
+  }
+  .invoicingControlSchedule1 {
+    padding-top: var(--padding-60xl);
+    padding-bottom: var(--padding-13xl);
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .customerTracking {
+    font-size: var(--font-size-lg);
+  }
+  .invoicingControlSchedule2 {
+    gap: var(--gap-2xl);
+    padding: var(--padding-78xl) var(--padding-xl) var(--padding-13xl);
+    box-sizing: border-box;
+    min-width: 100%;
+    flex: 1;
+  }
+}

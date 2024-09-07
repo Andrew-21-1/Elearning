@@ -1,0 +1,224 @@
+.classTechnologiesInc {
+  letter-spacing: 0.04em;
+  max-width: 100%;
+}
+.classTechnologiesInc,
+.footerChild,
+.subscribeToGet {
+  position: relative;
+  display: none;
+}
+.subscribeToGet {
+  font-size: var(--font-size-7xl);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: var(--color-white);
+  max-width: 100%;
+}
+.footerChild {
+  width: 83px;
+  height: 83px;
+  border-radius: var(--br-7xs);
+}
+.skilline {
+  font-size: var(--font-size-13xl);
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  text-align: left;
+  min-width: 129px;
+}
+.footerItem,
+.skilline,
+.virtualClassFor {
+  position: relative;
+  display: none;
+}
+.footerItem {
+  width: 1px;
+  height: 84px;
+  border-right: 1px solid var(--color-slategray-200);
+  box-sizing: border-box;
+}
+.virtualClassFor {
+  width: 156px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: var(--color-white);
+  text-align: left;
+}
+.footerInner {
+  width: 1px;
+  height: 18px;
+  position: relative;
+  border-right: 1px solid var(--color-slategray-200);
+  box-sizing: border-box;
+  display: none;
+}
+.careers {
+  min-width: 94px;
+}
+.careers,
+.privacyPolicy {
+  position: relative;
+  letter-spacing: 0.04em;
+  display: none;
+}
+.footerTopBorder,
+.rectangleDiv {
+  position: relative;
+  max-width: 100%;
+}
+.rectangleDiv {
+  width: 1920px;
+  height: 593px;
+  background-color: var(--color-firebrick-100);
+  display: none;
+}
+.footerTopBorder {
+  height: 174px;
+  flex: 1;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 3;
+}
+.footerBackground {
+  width: 536px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.careers1,
+.frameChild {
+  position: relative;
+  z-index: 1;
+}
+.careers1 {
+  letter-spacing: 0.04em;
+  display: inline-block;
+  min-width: 94px;
+}
+.frameChild {
+  width: 1px;
+  height: 18px;
+  border-right: 1px solid var(--color-slategray-200);
+  box-sizing: border-box;
+}
+.legalLinksInner {
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0 0;
+  box-sizing: border-box;
+}
+.privacyPolicy1 {
+  position: relative;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  z-index: 1;
+}
+.legalContent,
+.legalLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.legalLinks {
+  flex: 1;
+  gap: var(--gap-lgi-3);
+}
+.legalContent {
+  align-self: stretch;
+  padding: 0 0 0 var(--padding-3xs);
+  box-sizing: border-box;
+}
+.classTechnologiesInc1 {
+  position: relative;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  z-index: 1;
+}
+.footer,
+.footerContentContainer,
+.legalContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.legalContainer {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+.footer,
+.footerContentContainer {
+  align-self: stretch;
+}
+.footerContentContainer {
+  flex-direction: row;
+  gap: var(--gap-4xs);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+}
+.footer {
+  background-color: var(--color-firebrick-100);
+  flex-direction: column;
+  padding: var(--padding-174xl) var(--padding-658xl) var(--padding-21xl)
+    var(--padding-659xl);
+  box-sizing: border-box;
+  gap: var(--gap-81xl);
+  flex-shrink: 0;
+  z-index: 2;
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  color: var(--color-lightsteelblue-100);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1125px) {
+  .footer {
+    gap: var(--gap-31xl);
+    padding-left: var(--padding-320xl);
+    padding-right: var(--padding-319xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .skilline {
+    font-size: var(--font-size-7xl);
+  }
+  .classTechnologiesInc1 {
+    display: none;
+  }
+  .footer {
+    gap: var(--gap-6xl);
+    padding: var(--padding-106xl) var(--padding-150xl) var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .classTechnologiesInc {
+    font-size: var(--font-size-lg);
+  }
+  .subscribeToGet {
+    font-size: var(--font-size-2xl);
+  }
+  .skilline {
+    font-size: var(--font-size-lgi);
+  }
+  .careers,
+  .privacyPolicy,
+  .virtualClassFor {
+    font-size: var(--font-size-lg);
+  }
+}

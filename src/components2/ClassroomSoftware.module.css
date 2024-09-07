@@ -1,0 +1,191 @@
+.classroomIcon {
+  height: 73px;
+  width: 73px;
+  margin: 0 !important;
+  top: -13px;
+  left: -25px;
+  border-radius: 50%;
+  background-color: var(--color-firebrick-100);
+}
+.youCanDo {
+  color: var(--color-firebrick-100);
+}
+.everythingYouCanContainer {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 160%;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.classroomIconParent {
+  width: 655px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  max-width: 100%;
+  color: var(--color-black);
+}
+.totcsSchoolManagement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.02em;
+  line-height: 180%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.traditionalSoftwareChild {
+  position: absolute;
+  top: 73px;
+  left: 691px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+.traditionalSoftware {
+  align-self: stretch;
+  height: 172px;
+  position: relative;
+  font-size: var(--font-size-5xl);
+}
+.learnMore {
+  position: relative;
+  font-size: var(--font-size-3xl);
+  text-decoration: underline;
+  line-height: 40px;
+  display: inline-block;
+  min-width: 125px;
+  white-space: nowrap;
+}
+.frameGroup,
+.frameWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameGroup {
+  align-self: stretch;
+  gap: var(--gap-11xl);
+}
+.frameWrapper {
+  width: 730px;
+  padding: 0 0 var(--padding-41xl);
+  box-sizing: border-box;
+  min-width: 730px;
+  min-height: 448px;
+}
+.frameChild,
+.frameItem {
+  position: absolute;
+  top: 281px;
+  left: 514px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-black);
+  width: 231px;
+  height: 231px;
+}
+.frameItem {
+  top: 0;
+  left: 0;
+  background-color: var(--color-firebrick-100);
+  width: 138px;
+  height: 138px;
+}
+.frameInner {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: fit-content;
+  z-index: 1;
+}
+.rectangleParent {
+  height: 512px;
+  flex: 1;
+  position: relative;
+  min-width: 484px;
+  max-width: 50% !important;
+}
+.classroomSoftware,
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+  align-items: center;
+  padding: 50px;
+}
+.frameParent {
+  align-items: center;
+  gap: var(--gap-28xl);
+}
+.classroomSoftware {
+  align-self: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-slategray-100);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1300px) {
+  .frameWrapper {
+    flex: 1;
+  }
+  .frameParent {
+    flex-wrap: wrap;
+  }
+  .classroomSoftware {
+    padding-left: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .frameWrapper {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .everythingYouCanContainer {
+    font-size: var(--font-size-10xl);
+    line-height: 46px;
+  }
+  .rectangleParent {
+    min-width: 100%;
+  }
+  .frameParent {
+    gap: var(--gap-4xl);
+  }
+  .classroomSoftware {
+    padding-bottom: var(--padding-75xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .everythingYouCanContainer {
+    font-size: var(--font-size-3xl);
+    line-height: 35px;
+  }
+  .totcsSchoolManagement {
+    font-size: var(--font-size-lgi);
+    line-height: 35px;
+  }
+  .learnMore {
+    font-size: var(--font-size-lg);
+    line-height: 32px;
+  }
+  .frameWrapper {
+    padding-bottom: var(--padding-20xl);
+    box-sizing: border-box;
+  }
+}

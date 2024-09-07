@@ -1,0 +1,157 @@
+.section {
+  border-radius: 0;
+  height: 50%;
+}
+
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 40rem !important;
+}
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.imageWrapper {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .imageWrapper {
+    width: 80%;
+  }
+}
+
+.mainImage {
+  aspect-ratio: 0.88;
+  object-fit: contain;
+  object-position: center;
+  width: 70%;
+  height: fit-content;
+  border-radius: 0;
+  flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+  .mainImage {
+    max-width: 100%;
+  }
+}
+
+.content {
+  width: 38%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+@media (max-width: 991px) {
+  .content {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px -5px 0 0;
+  }
+}
+
+.title {
+  color: #000;
+  font: 700 32px/42px Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+  .title {
+    max-width: 100%;
+  }
+}
+
+.highlight {
+  color: #bf4628;
+}
+
+.featureCard {
+  display: flex;
+  margin-top: 20px;
+  gap: 40px 42px;
+  flex-wrap: wrap;
+}
+
+.featureIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 60px;
+  height: 60px;
+  background-color: #fbfbfb;
+  box-shadow: 0 15px 44px rgba(13, 15, 28, 0.12);
+  border-radius: 50%;
+  margin: auto 0;
+}
+
+.customIcon {
+  background-color: #fbfbfb;
+  box-shadow: 0 15px 44px rgba(13, 15, 28, 0.12);
+  border-radius: 50%;
+  align-self: start;
+  display: flex;
+  margin-top: 14px;
+  align-items: start;
+  width: 60px;
+  height: 60px;
+  padding: 17px 12px;
+}
+
+.orangeSquare {
+  border-radius: 2px;
+  background-color: #f48c06;
+  z-index: 10;
+  width: 21px;
+  height: 21px;
+}
+
+@media (max-width: 991px) {
+  .orangeSquare {
+    margin-right: -13px;
+  }
+}
+
+.redSquare {
+  border-radius: 2px;
+  background-color: #bf4628;
+  margin-top: 6px;
+  width: 20px;
+  height: 20px;
+}
+
+.featureDescription {
+  color: #696984;
+  letter-spacing: 0.44px;
+  flex-grow: 1;
+  flex-basis: auto;
+  font: 400 22px/40px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  max-width: 431px;
+}
+
+@media (max-width: 991px) {
+  .featureDescription {
+    max-width: 100%;
+  }
+}

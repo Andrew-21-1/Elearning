@@ -1,0 +1,143 @@
+.choiceFavouriteCourse,
+.welcomeBackReady {
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  display: inline-block;
+}
+.welcomeBackReady {
+  top: 0;
+  font-family: var(--font-livvic);
+  width: 966px;
+}
+.choiceFavouriteCourse {
+  top: 815px;
+  color: var(--color-gray-200);
+  width: 792px;
+}
+.groupChild,
+.groupItem {
+  position: absolute;
+  top: 0;
+  border-radius: var(--br-xl);
+}
+.groupChild {
+  left: 0;
+  box-shadow: 0 18.8px 47.08px rgba(47, 50, 125, 0.1);
+  background-color: var(--color-white);
+  width: 529px;
+  height: 474px;
+}
+.groupItem {
+  left: 0.9px;
+  width: 486.4px;
+  height: 258.4px;
+  object-fit: cover;
+}
+.groupInner,
+.rectangleGroup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 258.4px;
+}
+.groupInner {
+  border-radius: var(--br-xl);
+  background-color: var(--color-darkslateblue-300);
+  width: 486.4px;
+  opacity: 0.1;
+}
+.rectangleGroup {
+  width: 487.3px;
+}
+.awsCertifiedSolutions {
+  position: absolute;
+  top: 270.4px;
+  left: 4.3px;
+  line-height: 180%;
+  font-weight: 500;
+  display: inline-block;
+  width: 412px;
+  height: 48px;
+}
+.groupDiv,
+.lesson5Of {
+  position: absolute;
+  top: 19.6px;
+  left: 20.7px;
+  width: 487.3px;
+  height: 318.4px;
+}
+.lesson5Of {
+  top: 435px;
+  left: 414px;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: var(--color-gray-500);
+  display: inline-block;
+  width: 93px;
+  height: 27px;
+}
+.groupContainer,
+.groupParent1,
+.lesson5Of2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 529px;
+  height: 474px;
+}
+.groupParent1,
+.lesson5Of2 {
+  left: 579px;
+}
+.lesson5Of2 {
+  top: 435px;
+  left: 414px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  display: inline-block;
+  width: 93px;
+  height: 27px;
+}
+.groupParent,
+.groupParent2 {
+  position: absolute;
+  height: 474px;
+}
+.groupParent2 {
+  top: 0;
+  left: 1158px;
+  width: 529px;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+.groupParent {
+  top: 104px;
+  left: 0;
+  width: 1687px;
+  font-size: var(--font-size-5xl);
+}
+.viewHisotry {
+  position: absolute;
+  top: 18px;
+  left: 1553px;
+  font-size: var(--font-size-xl);
+}
+.courseInner,
+.welcomeBackReadyForYourNParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1687px;
+  height: 869px;
+}
+.courseInner {
+  top: 193px;
+  left: 120px;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-sienna);
+  font-family: var(--font-poppins);
+}
