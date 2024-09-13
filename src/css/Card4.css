@@ -1,24 +1,63 @@
 .card-container {
-  border-radius: 69px;
+  border-radius: 4.3125rem;
   background-color: #ffe9ea;
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .header-row {
   display: flex;
   justify-content: center !important;
   align-items: baseline;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   background-color: white;
-  border-radius: 69px;
+  border-radius: 4.3125rem;
   width: 95% !important;
-  margin: 0px !important;
+  margin: 0rem !important;
 }
 .row {
-  margin: 0px !important;
+  margin: 0rem !important;
+}
+.cardContainer {
+  background-color: transparent;
+  padding: 0;
+  height: 35rem;
 }
 
+.rowContainer {
+  align-items: flex-end;
+  height: 100%;
+  gap: 20px;
+}
+
+.centerCol {
+  height: 100%;
+}
+
+.centerContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerImage {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+}
+
+.greeting {
+  margin: 0.5rem 0;
+}
+
+.question {
+  margin: 0.5rem 0;
+}
+
+.instruction {
+  margin: 0.5rem 0;
+}
 .student {
   display: flex;
   flex-direction: row;
@@ -33,10 +72,10 @@
   justify-content: space-between;
 }
 p {
-  margin: 0px !important;
+  margin: 0rem !important;
   color: #690061;
-  font-family: "Be Vietnam";
-  font-size: 15px;
+  font-family: 'Be Vietnam';
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

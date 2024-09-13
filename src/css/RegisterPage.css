@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 38px 41px;
+  padding: 2.375rem 2.5625rem;
   background-color: #bf4628;
 }
 .login-form {
@@ -26,46 +26,46 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 38px 41px;
+  padding: 2.375rem 2.5625rem;
 }
 
 .register-image {
-  max-height: 730px;
+  max-height: 45.625rem;
   width: 100%;
   object-fit: contain;
 }
 
 .login-title {
-  font-family: "Livvic", sans-serif;
+  font-family: 'Livvic', sans-serif;
   color: white;
   font-weight: 700;
-  font-size: 37px;
+  font-size: 2.3125rem;
   text-align: left;
 }
 
 .login-subtitle {
-  font-family: "Livvic", sans-serif;
+  font-family: 'Livvic', sans-serif;
   color: white;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.5625rem;
   text-align: left;
 }
 
 .welcome-text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: black;
   font-weight: 500;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   text-align: left;
 }
 
 .welcome-description {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-family: "Poppins", sans-serif;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', sans-serif;
   color: white;
   font-weight: 400 !important;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   text-align: left;
 }
 
@@ -74,32 +74,32 @@
   justify-content: space-around;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 33px;
+  border-radius: 2.0625rem;
   width: 80%;
-  height: 59px;
+  height: 3.6875rem;
 }
 
 .login-btn2,
 .register-btn2 {
   width: 45%;
-  height: 40px;
-  border-radius: 33px;
-  margin: 9px 13px;
+  height: 2.5rem;
+  border-radius: 2.0625rem;
+  margin: 0.5625rem 0.8125rem;
   align-items: center;
   justify-content: center;
   display: flex;
 }
 .register-modal {
-  background-image: url("../assets/images/background.svg");
+  background-image: url('../assets/images/background.svg');
   width: 100% !important;
-  border-radius: 45px;
+  border-radius: 2.8125rem;
 }
 .big-modal {
   size: 200rem !important;
 }
 .modal-content {
   background-color: transparent !important;
-  border: 0px transparent !important;
+  border: 0rem transparent !important;
 }
 .close-button-container {
   display: flex;
@@ -108,7 +108,7 @@
 }
 .close-button {
   background-color: transparent !important;
-  border: 0px transparent !important;
+  border: 0rem transparent !important;
 }
 .login-btn2 {
   background-color: transparent !important;
@@ -119,20 +119,20 @@
 .register-btn2 {
   background-color: black !important;
   color: white;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 }
 
 .form-control-custom {
-  border: 1px solid transparent !important;
-  border-radius: 40px !important;
-  height: 50px !important;
-  font-family: "Poppins";
+  border: 0.0625rem solid transparent !important;
+  border-radius: 2.5rem !important;
+  height: 3.125rem !important;
+  font-family: 'Poppins';
 }
 .form-control {
-  padding: 16px 31px !important;
+  padding: 1rem 1.9375rem !important;
 }
 .eye-icon {
-  right: 15px;
+  right: 0.9375rem;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -142,16 +142,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .form-label {
   color: #000;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 .form-check-input {
-  margin-right: 5px;
+  margin-right: 0.3125rem;
 }
 
 .remember-me {
@@ -173,22 +173,22 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 .register-submit-btn {
   width: 50%;
-  height: 40px;
-  border-radius: 35px;
+  height: 2.5rem;
+  border-radius: 2.1875rem;
   background-color: #000;
   color: white;
   border-color: transparent;
 }
 
 /* Responsive Styling */
-@media (max-width: 960px) {
+@media (max-width: 60rem) {
   .left-container,
   .right-container {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .login-buttons {
@@ -200,11 +200,11 @@
   }
 
   .welcome-description {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .login-page-container {
     flex-direction: column;
     align-items: stretch;
@@ -214,37 +214,37 @@
 
   .left-container,
   .right-container {
-    padding: 20px;
+    padding: 1.25rem;
     width: 100%;
   }
 
   .login-image {
-    max-height: 200px;
-    margin-bottom: 20px;
+    max-height: 12.5rem;
+    margin-bottom: 1.25rem;
   }
 
   .login-title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .login-subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .welcome-text,
   .welcome-description {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .login-buttons {
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
   }
 
   .login-btn2,
   .register-btn2 {
     width: 48%;
-    height: 35px;
+    height: 2.1875rem;
   }
 
   .login-submit-btn {
@@ -252,26 +252,26 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36rem) {
   .login-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .login-subtitle {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .welcome-text,
   .welcome-description {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .left-container {
-    padding: 10px;
+    padding: 0.625rem;
   }
 
   .right-container {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .login-buttons {
@@ -282,7 +282,7 @@
   .login-btn2,
   .register-btn2 {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   .login-submit-btn {

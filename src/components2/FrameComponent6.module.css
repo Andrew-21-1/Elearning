@@ -3,7 +3,6 @@
 }
 .toolsForTeachersContainer {
   margin: 0;
-  width: 393px;
   position: relative;
   font-size: inherit;
   line-height: 160%;
@@ -20,11 +19,11 @@
   line-height: 180%;
   color: var(--color-slategray-100);
 }
+.frameContainer1,
 .frameContainer,
 .toolsForTeachersAndLearnerParent {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   max-width: 100%;
 }
 .toolsForTeachersAndLearnerParent {
@@ -38,15 +37,21 @@
   padding: 0 0 0 var(--padding-sm);
   box-sizing: border-box;
 }
+.frameContainer1 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-sm);
+  box-sizing: border-box;
+}
 .contentElementsChild {
-  height: 23px;
-  width: 23px;
+  height: 1.4375rem;
+  width: 1.4375rem;
   position: relative;
   border-radius: 50%;
   background-color: var(--color-sandybrown);
 }
 .contentElements {
-  width: 193.2px;
+  width: 12.075rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -55,52 +60,51 @@
   box-sizing: border-box;
 }
 .questionContainerChild {
-  height: 99.6px;
-  width: 99.6px;
+  height: 6.225rem;
+  width: 6.225rem;
   position: absolute;
   margin: 0 !important;
-  top: -18.2px;
-  left: -46px;
+  top: -1.1375rem;
+  left: -2.875rem;
   border-radius: 50%;
   background-color: var(--color-firebrick-100);
 }
 .questionContentChild {
-  width: 465.6px;
-  height: 562.4px;
+  width: 29.1rem;
+  height: 35.15rem;
   position: relative;
-  box-shadow: 0 9.1px 43.69px rgba(40, 43, 110, 0.1);
-  border-radius: 18.21px;
+  box-shadow: 0 0.56875rem 2.730625rem rgba(40, 43, 110, 0.1);
+  border-radius: 1.138125rem;
   background-color: var(--color-white);
   display: none;
   max-width: 100%;
 }
 .frameChild {
-  height: 47.9px;
-  width: 174.4px;
+  height: 2.99375rem;
+  width: 10.9rem;
   position: relative;
-  border-radius: 72.82px;
+  border-radius: 4.55125rem;
   background-color: var(--color-firebrick-300);
   display: none;
 }
 .question1 {
   position: relative;
   font-size: var(--font-size-xl);
-  line-height: 33.5px;
+  line-height: 2.09375rem;
   font-weight: 500;
   font-family: var(--font-poppins);
   color: var(--color-black);
   text-align: left;
   display: inline-block;
-  min-width: 108.3px;
+  min-width: 6.76875rem;
   z-index: 3;
 }
 .rectangleParent {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-6xs-7) var(--padding-13xl) var(--padding-5xs-7)
-    var(--padding-14xl);
+  padding: var(--padding-6xs-7) var(--padding-13xl) var(--padding-5xs-7) var(--padding-14xl);
   background-color: var(--color-firebrick-300);
-  border-radius: 72.82px;
+  border-radius: 4.55125rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -113,7 +117,7 @@
 }
 .trueOrFalse {
   margin: 0;
-  width: 387.1px;
+  width: 24.19375rem;
   position: relative;
   font-size: inherit;
   line-height: 160%;
@@ -125,15 +129,14 @@
 }
 .questionContent {
   flex: 1;
-  box-shadow: 0 9.1px 43.69px rgba(40, 43, 110, 0.1);
-  border-radius: 18.21px;
+  box-shadow: 0 0.56875rem 2.730625rem rgba(40, 43, 110, 0.1);
+  border-radius: 1.138125rem;
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-19xl-3) var(--padding-xl) var(--padding-317xl)
-    var(--padding-19xl);
+  padding: var(--padding-19xl-3) var(--padding-xl) var(--padding-317xl) var(--padding-19xl);
   box-sizing: border-box;
   gap: var(--gap-21xl-2);
   flex-shrink: 0;
@@ -145,33 +148,33 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 89.8px;
-  height: 89.8px;
+  width: 5.6125rem;
+  height: 5.6125rem;
   object-fit: contain;
   z-index: 2;
 }
 .frameInner {
-  top: 47.9px;
-  left: 55.6px;
-  width: 92.8px;
-  height: 92.8px;
+  top: 2.99375rem;
+  left: 3.475rem;
+  width: 5.8rem;
+  height: 5.8rem;
   z-index: 3;
 }
 .frameDiv {
-  height: 140.7px;
-  width: 148.4px;
+  height: 8.79375rem;
+  width: 9.275rem;
   position: absolute;
   margin: 0 !important;
-  top: -21.1px;
-  right: -43px;
+  top: -1.31875rem;
+  right: -2.6875rem;
 }
 .maskGroupIcon,
 .maskGroupIcon1 {
   position: absolute;
-  top: 30.7px;
-  left: 37.3px;
-  width: 406.2px;
-  height: 227.7px;
+  top: 1.91875rem;
+  left: 2.33125rem;
+  width: 25.3875rem;
+  height: 14.23125rem;
   object-fit: cover;
   z-index: 2;
 }
@@ -183,19 +186,19 @@
   z-index: 3;
 }
 .maskGroupParent {
-  height: 258.4px;
-  width: 456px;
+  height: 16.15rem;
+  width: 28.5rem;
   position: absolute;
   margin: 0 !important;
-  right: -24.9px;
-  bottom: 35.8px;
+  right: -1.55625rem;
+  bottom: 2.2375rem;
 }
 .rectangleDiv {
-  height: 119.8px;
-  width: 365px;
+  height: 7.4875rem;
+  width: 22.8125rem;
   position: relative;
-  box-shadow: 0 18.2px 52.8px rgba(40, 43, 110, 0.08);
-  border-radius: 18.21px;
+  box-shadow: 0 1.1375rem 3.3rem rgba(40, 43, 110, 0.08);
+  border-radius: 1.138125rem;
   background-color: var(--color-white);
   display: none;
   max-width: 100%;
@@ -210,8 +213,8 @@
   z-index: 1;
 }
 .responseContent {
-  height: 66.1px;
-  width: 59.4px;
+  height: 4.13125rem;
+  width: 3.7125rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -220,18 +223,18 @@
   box-sizing: border-box;
 }
 .fourteenthImage {
-  height: 38.3px;
-  width: 37.4px;
+  height: 2.39375rem;
+  width: 2.3375rem;
   position: absolute;
   margin: 0 !important;
-  right: 1px;
-  bottom: -4.7px;
+  right: 0.0625rem;
+  bottom: -0.29375rem;
   border-radius: 50%;
   background-color: var(--color-lightcyan-100);
   z-index: 1;
 }
 .yourAnswerWas {
-  height: 67.1px;
+  height: 4.19375rem;
   flex: 1;
   position: relative;
   line-height: 160%;
@@ -246,15 +249,15 @@
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  min-width: 124px;
+  min-width: 7.75rem;
 }
 .groupIcon {
-  height: 76.4px;
-  width: 88.3px;
+  height: 4.775rem;
+  width: 5.51875rem;
   position: absolute;
   margin: 0 !important;
-  bottom: 21.4px;
-  left: 28.7px;
+  bottom: 1.3375rem;
+  left: 1.79375rem;
   object-fit: contain;
   z-index: 2;
 }
@@ -267,16 +270,15 @@
   max-width: 100%;
 }
 .rectangleGroup {
-  width: 365px;
+  width: 22.8125rem;
   margin: 0 !important;
   position: absolute;
-  right: -105.4px;
-  bottom: -39.3px;
-  box-shadow: 0 18.2px 52.8px rgba(40, 43, 110, 0.08);
-  border-radius: 18.21px;
+  right: -6.5875rem;
+  bottom: -2.45625rem;
+  box-shadow: 0 1.1375rem 3.3rem rgba(40, 43, 110, 0.08);
+  border-radius: 1.138125rem;
   background-color: var(--color-white);
-  padding: var(--padding-7xl-8) var(--padding-9xl) var(--padding-6xl-9)
-    var(--padding-21xl);
+  padding: var(--padding-7xl-8) var(--padding-9xl) var(--padding-6xl-9) var(--padding-21xl);
   box-sizing: border-box;
   gap: var(--gap-27xl);
   z-index: 4;
@@ -286,18 +288,18 @@
 .questionContainer {
   flex: 1;
   position: relative;
-  min-width: 303px;
+  min-width: 18.9375rem;
 }
 .responseIconChild {
-  width: 16.3px;
-  height: 16.3px;
+  width: 1.01875rem;
+  height: 1.01875rem;
   position: relative;
   border-radius: 50%;
   background-color: var(--color-firebrick-100);
   flex-shrink: 0;
 }
 .responseIcon {
-  height: 248.2px;
+  height: 15.5125rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -323,8 +325,8 @@
   box-sizing: border-box;
 }
 .exampleContainerChild {
-  width: 19.2px;
-  height: 19.2px;
+  width: 1.2rem;
+  height: 1.2rem;
   position: relative;
   border-radius: 50%;
   background-color: var(--color-firebrick-100);
@@ -340,7 +342,7 @@
   max-width: 100%;
 }
 .contentContainer {
-  width: 535.6px;
+  width: 33.475rem;
   gap: var(--gap-2xl-1);
   font-size: var(--font-size-12xl);
   color: var(--color-black);
@@ -349,7 +351,7 @@
 .frameGroup,
 .frameWrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
@@ -359,27 +361,22 @@
   gap: var(--gap-255xl);
 }
 .frameWrapper {
-  width: 582.4px;
-  padding: var(--padding-138xl) 0 0;
   box-sizing: border-box;
-  min-width: 582.4px;
 }
 .frameChild1 {
   align-self: stretch;
-  height: 536px;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   flex-shrink: 0;
 }
 .frameWrapper1 {
-  height: 1143px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 105%;
+  max-width: 100%;
   flex-shrink: 0;
 }
 .quizzes {
@@ -387,54 +384,57 @@
 }
 .assessmentsQuizzesTestsContainer {
   margin: 0;
-  width: 347px;
+  width: 21.6875rem;
   position: relative;
   font-size: inherit;
   line-height: 160%;
   font-weight: 600;
+  text-align: left;
   font-family: inherit;
   display: inline-block;
   max-width: 100%;
 }
 .assessmentsQuizzesTestsParent {
-  width: 596px;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-xl);
   max-width: 100%;
-  margin-left: -623.2px;
 }
 .frameParent,
 .frameParent1,
 .landingInner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 100%;
+  justify-content: center;
 }
 .frameParent1 {
-  width: 637.2px;
+  width: 39.825rem;
   align-items: flex-end;
   justify-content: flex-start;
   padding: 0 var(--padding-9xl) 0 0;
   box-sizing: border-box;
-  min-width: 637.2px;
+  min-width: 39.825rem;
   color: var(--color-black);
+  flex-direction: row;
+  gap: var(--gap-255xl);
 }
 .frameParent,
 .landingInner {
-  align-items: flex-start;
+  align-items: center;
 }
 .frameParent {
-  width: 1455.6px;
+  width: 90.975rem;
   justify-content: space-between;
   gap: var(--gap-xl);
 }
 .landingInner {
-  width: 1904.2px;
+  width: 119.0125rem;
   justify-content: center;
-  padding: 0 var(--padding-xl) var(--padding-147xl-5);
+  padding: 0 var(--padding-xl) var(--padding-xl);
   box-sizing: border-box;
   flex-shrink: 0;
   text-align: left;
@@ -442,11 +442,20 @@
   color: var(--color-firebrick-100);
   font-family: var(--font-poppins);
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
+  .frameContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .frameContainer1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .frameWrapper {
     flex: 1;
     padding-top: var(--padding-83xl);
     box-sizing: border-box;
+    flex-direction: column;
   }
   .frameParent1 {
     flex: 1;
@@ -462,14 +471,22 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
+  .frameContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .frameContainer1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .toolsForTeachersContainer {
     font-size: var(--font-size-13xl);
-    line-height: 51px;
+    line-height: 3.1875rem;
   }
   .trueOrFalse {
     font-size: var(--font-size-6xl);
-    line-height: 40px;
+    line-height: 2.5rem;
   }
   .questionContent {
     padding-top: var(--padding-6xl);
@@ -487,10 +504,11 @@
     padding-top: var(--padding-47xl);
     box-sizing: border-box;
     min-width: 100%;
+    flex-direction: column;
   }
   .assessmentsQuizzesTestsContainer {
     font-size: var(--font-size-13xl);
-    line-height: 51px;
+    line-height: 3.1875rem;
   }
   .frameParent1 {
     min-width: 100%;
@@ -500,25 +518,33 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
+  .frameContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .frameContainer1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .toolsForTeachersContainer {
     font-size: var(--font-size-5xl);
-    line-height: 38px;
+    line-height: 2.375rem;
   }
   .classHasA {
     font-size: var(--font-size-lg);
-    line-height: 32px;
+    line-height: 2rem;
   }
   .trueOrFalse {
     font-size: var(--font-size-lgi);
-    line-height: 30px;
+    line-height: 1.875rem;
   }
   .questionContent {
     gap: var(--gap-xl);
   }
   .yourAnswerWas {
     font-size: var(--font-size-base);
-    line-height: 26px;
+    line-height: 1.625rem;
   }
   .rectangleGroup {
     flex-wrap: wrap;
@@ -528,7 +554,7 @@
   }
   .assessmentsQuizzesTestsContainer {
     font-size: var(--font-size-5xl);
-    line-height: 38px;
+    line-height: 2.375rem;
   }
   .landingInner {
     padding-bottom: var(--padding-26xl);

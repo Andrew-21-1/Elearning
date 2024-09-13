@@ -1,24 +1,65 @@
 .card-container {
-  border-radius: 69px;
+  border-radius: 4.3125rem;
   background-color: #ffe9ea;
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .header-row {
   display: flex;
   justify-content: center !important;
   align-items: baseline;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   background-color: white;
-  border-radius: 69px;
+  border-radius: 4.3125rem;
   width: 95% !important;
-  margin: 0px !important;
-}
-.row {
-  margin: 0px !important;
+  margin: 0rem !important;
 }
 
+.rowContainer2 {
+  margin-top: 10px;
+}
+
+.centeredContent {
+  text-align: center;
+  width: 50%;
+  padding: 70px;
+}
+.row {
+  margin: 0rem !important;
+}
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Student section styles */
+.student {
+  display: flex;
+  align-items: center;
+}
+
+.student-img {
+  padding-right: 7px;
+}
+
+/* Title row styles */
+.title-row {
+  margin-top: 10px;
+}
+
+/* Title image styles */
+.title-img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* Chart image styles */
+.chart-img {
+  width: 100%;
+}
 .student {
   display: flex;
   flex-direction: row;
@@ -30,9 +71,9 @@
   width: 100%;
 }
 .card-container2 {
-  border-radius: 69px;
+  border-radius: 4.3125rem;
   background-color: #ffe9ea;
-  padding: 40px;
+  padding: 2.5rem;
 }
 .row-container2 {
   display: flex;
@@ -45,10 +86,10 @@
   justify-content: space-between;
 }
 p {
-  margin: 0px !important;
+  margin: 0rem !important;
   color: #690061;
-  font-family: "Be Vietnam";
-  font-size: 15px;
+  font-family: 'Be Vietnam';
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

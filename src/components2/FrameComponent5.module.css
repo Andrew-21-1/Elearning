@@ -1,10 +1,10 @@
 .testimonialImageTwo {
-  height: 140px;
-  width: 140px;
+  height: 8.75rem;
+  width: 8.75rem;
   position: absolute;
   margin: 0 !important;
-  top: -76px;
-  left: 63px;
+  top: -4.75rem;
+  left: 3.9375rem;
   border-radius: 50%;
   background-color: var(--color-firebrick-100);
 }
@@ -26,16 +26,25 @@
   max-height: 100%;
   z-index: 1;
 }
+.frameWrapper1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  flex-shrink: 0;
+}
 .maskGroupIcon,
 .maskGroupIcon1 {
   object-fit: cover;
 }
 .maskGroupIcon {
-  height: 227.1px;
-  width: calc(100% - 20.4px);
-  right: 10.2px;
-  bottom: -6.7px;
-  left: 10.2px;
+  height: 14.19375rem;
+  width: calc(100% - 1.275rem);
+  right: 0.6375rem;
+  bottom: -0.41875rem;
+  left: 0.6375rem;
   z-index: 2;
 }
 .maskGroupIcon1 {
@@ -49,11 +58,11 @@
   z-index: 3;
 }
 .frameItem {
-  height: 22px;
-  width: 170px;
+  height: 1.375rem;
+  width: 10.625rem;
   position: relative;
-  backdrop-filter: blur(11.09px);
-  border-radius: 5.55px;
+  backdrop-filter: blur(0.693125rem);
+  border-radius: 0.346875rem;
   background-color: var(--color-lightsteelblue-200);
   flex-shrink: 0;
   display: none;
@@ -62,27 +71,27 @@
 .namePlaceholder1,
 .namePlaceholder2 {
   position: absolute;
-  top: 3.9px;
+  top: 0.24375rem;
   left: 0;
-  border-radius: 0.55px;
+  border-radius: 0.034375rem;
   background-color: var(--color-white);
-  width: 1.7px;
-  height: 3.9px;
+  width: 0.10625rem;
+  height: 0.24375rem;
 }
 .namePlaceholder1,
 .namePlaceholder2 {
-  top: 2px;
-  left: 2.8px;
-  height: 5.8px;
+  top: 0.125rem;
+  left: 0.175rem;
+  height: 0.3625rem;
 }
 .namePlaceholder2 {
   top: 0;
-  left: 5.6px;
-  height: 7.8px;
+  left: 0.35rem;
+  height: 0.4875rem;
 }
 .namePlaceholderParent {
-  width: 7.2px;
-  height: 7.8px;
+  width: 0.45rem;
+  height: 0.4875rem;
   position: relative;
   z-index: 1;
 }
@@ -94,10 +103,9 @@
   padding: var(--padding-8xs-2) 0 0;
 }
 .instructorTitleChild {
-  height: 16px;
-  width: 58px;
+  height: 1rem;
   position: relative;
-  border-radius: 5.55px;
+  border-radius: 0.346875rem;
   background-color: var(--color-dodgerblue);
   display: none;
 }
@@ -105,11 +113,11 @@
   position: relative;
   font-weight: 600;
   display: inline-block;
-  min-width: 44px;
+  min-width: 2.75rem;
   z-index: 2;
 }
 .instructorTitle {
-  border-radius: 5.55px;
+  border-radius: 0.346875rem;
   background-color: var(--color-dodgerblue);
   display: flex;
   flex-direction: row;
@@ -123,13 +131,11 @@
   font-size: var(--font-size-xs-1);
   font-weight: 600;
   display: inline-block;
-  min-width: 74px;
   z-index: 1;
 }
 .rectangleParent {
-  width: 170px;
-  backdrop-filter: blur(11.09px);
-  border-radius: 5.55px;
+  backdrop-filter: blur(0.693125rem);
+  border-radius: 0.346875rem;
   background-color: var(--color-lightsteelblue-200);
   overflow-x: auto;
   flex-shrink: 0;
@@ -154,19 +160,15 @@
   position: relative;
 }
 .deeplyNestedMask1 {
-  width: 333.5px;
-  height: 246.8px;
   align-items: flex-start;
   padding: 0 var(--padding-20xl);
   box-sizing: border-box;
   max-width: 100%;
 }
 .frameInner {
-  height: 51.1px;
-  width: 153.2px;
   position: relative;
-  box-shadow: 0 8.5px 20.43px rgba(52, 101, 225, 0.3);
-  border-radius: 51.07px;
+  box-shadow: 0 0.53125rem 1.276875rem rgba(52, 101, 225, 0.3);
+  border-radius: 3.191875rem;
   background-color: var(--color-firebrick-100);
   display: none;
 }
@@ -177,7 +179,7 @@
   font-family: var(--font-nunito-sans);
   color: var(--color-white);
   text-align: left;
-  min-width: 79px;
+  min-width: 4.9375rem;
   z-index: 1;
 }
 .presentCallInner,
@@ -189,11 +191,10 @@
 .rectangleGroup {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-2xs-3) var(--padding-17xl) var(--padding-2xs-8)
-    var(--padding-18xl);
+  padding: var(--padding-2xs-3) var(--padding-17xl) var(--padding-2xs-8) var(--padding-18xl);
   background-color: var(--color-firebrick-100);
-  box-shadow: 0 8.5px 20.43px rgba(52, 101, 225, 0.3);
-  border-radius: 51.07px;
+  box-shadow: 0 0.53125rem 1.276875rem rgba(52, 101, 225, 0.3);
+  border-radius: 3.191875rem;
   flex-direction: row;
   z-index: 2;
 }
@@ -206,22 +207,18 @@
 }
 .frameChild1,
 .rectangleDiv {
-  height: 65px;
-  width: 169px;
   position: relative;
-  border-radius: 51.07px;
+  border-radius: 3.191875rem;
   background-color: var(--color-gray-700);
   display: none;
 }
 .frameChild1 {
-  height: 51.1px;
-  width: 153.2px;
-  box-shadow: 0 8.5px 20.43px rgba(202, 47, 93, 0.3);
+  box-shadow: 0 0.53125rem 1.276875rem rgba(202, 47, 93, 0.3);
   background-color: var(--color-black);
 }
 .phone1Icon {
-  width: 17px;
-  height: 17px;
+  width: 1.0625rem;
+  height: 1.0625rem;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
@@ -241,13 +238,13 @@
   font-family: var(--font-nunito-sans);
   color: var(--color-white);
   text-align: left;
-  min-width: 41.7px;
+  min-width: 2.60625rem;
   z-index: 2;
 }
 .frameButton,
 .rectangleContainer {
   flex: 1;
-  border-radius: 51.07px;
+  border-radius: 3.191875rem;
   flex-direction: row;
 }
 .frameButton {
@@ -255,7 +252,7 @@
   border: 0;
   padding: var(--padding-2xs) var(--padding-23xl) var(--padding-2xs-3);
   background-color: var(--color-black);
-  box-shadow: 0 8.5px 20.43px rgba(202, 47, 93, 0.3);
+  box-shadow: 0 0.53125rem 1.276875rem rgba(202, 47, 93, 0.3);
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -264,10 +261,9 @@
 }
 .rectangleContainer {
   background-color: var(--color-gray-700);
-  padding: var(--padding-6xs) var(--padding-6xs) var(--padding-6xs-9)
-    var(--padding-5xs);
+  padding: var(--padding-6xs) var(--padding-6xs) var(--padding-6xs-9) var(--padding-5xs);
   box-sizing: border-box;
-  min-width: 110px;
+  min-width: 6.875rem;
   z-index: 2;
 }
 .deeplyNestedMaskGroup,
@@ -288,15 +284,15 @@
   flex-direction: column;
 }
 .deeplyNestedMaskGroup {
-  width: 346.3px;
+  width: 21.64375rem;
   gap: var(--gap-15xl-4);
-  min-width: 346.3px;
+  min-width: 21.64375rem;
   max-width: 100%;
 }
 .tamaraHumbert {
-  width: 166.4px;
+  width: 10.4rem;
   gap: var(--gap-6xl);
-  min-width: 166.4px;
+  min-width: 10.4rem;
   font-size: var(--font-size-xs-1);
 }
 .ellipseDiv,
@@ -308,26 +304,23 @@
   height: 100%;
   top: 0;
   bottom: 0;
-  left: 29px;
+  left: 1.8125rem;
   background-color: var(--color-firebrick-100);
-  width: 264px;
+  width: 16.5rem;
 }
 .frameChild2 {
-  top: 212px;
+  top: 13.25rem;
   left: 0;
   background-color: var(--color-salmon-200);
-  width: 30px;
-  height: 30px;
+
   z-index: 1;
 }
 .ellipseParent,
 .maskGroupIcon2 {
-  height: 264px;
-  width: 293px;
   position: absolute;
   margin: 0 !important;
-  bottom: -52px;
-  left: -78px;
+  bottom: -3.25rem;
+  left: -4.875rem;
 }
 .maskGroupIcon2 {
   height: 100%;
@@ -342,10 +335,10 @@
   object-fit: cover;
 }
 .frameChild3 {
-  height: 31.2px;
-  width: 159.2px;
+  height: 1.95rem;
+  width: 9.95rem;
   position: relative;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(1rem);
   border-radius: var(--br-5xs);
   background-color: var(--color-lightsteelblue-200);
   display: none;
@@ -354,28 +347,28 @@
 .firstRating1,
 .firstRating2 {
   position: absolute;
-  top: 5.6px;
+  top: 0.35rem;
   left: 0;
   border-radius: var(--br-12xs-8);
   background-color: var(--color-white);
-  width: 2.4px;
-  height: 5.6px;
+  width: 0.15rem;
+  height: 0.35rem;
   z-index: 1;
 }
 .firstRating1,
 .firstRating2 {
-  top: 2.8px;
-  left: 4px;
-  height: 8.4px;
+  top: 0.175rem;
+  left: 0.25rem;
+  height: 0.525rem;
 }
 .firstRating2 {
   top: 0;
-  left: 8px;
-  height: 11.2px;
+  left: 0.5rem;
+  height: 0.7rem;
 }
 .firstRatingParent {
-  width: 10.4px;
-  height: 11.2px;
+  width: 0.65rem;
+  height: 0.7rem;
   position: relative;
 }
 .avatarContainer {
@@ -389,19 +382,18 @@
   position: relative;
   font-weight: 600;
   display: inline-block;
-  min-width: 125px;
+  min-width: 7.8125rem;
   z-index: 1;
 }
 .groupDiv {
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(1rem);
   border-radius: var(--br-5xs);
   background-color: var(--color-lightsteelblue-200);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-8xs-8) var(--padding-6xs) var(--padding-8xs-4)
-    var(--padding-5xs);
+  padding: var(--padding-8xs-8) var(--padding-6xs) var(--padding-8xs-4) var(--padding-5xs);
   gap: var(--gap-5xs);
   z-index: 1;
 }
@@ -411,10 +403,10 @@
   margin: 0 !important;
 }
 .frameParent {
-  width: 240px;
-  right: -113px;
-  bottom: -39px;
-  filter: drop-shadow(20px 20px 40px rgba(13, 15, 28, 0.15));
+  width: 15rem;
+  right: -7.0625rem;
+  bottom: -2.4375rem;
+  filter: drop-shadow(1.25rem 1.25rem 2.5rem rgba(13, 15, 28, 0.15));
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -425,10 +417,10 @@
   font-size: var(--font-size-base);
 }
 .groupIcon {
-  height: 789.9px;
-  width: 93px;
-  top: -443.9px;
-  right: 290px;
+  height: 49.36875rem;
+  width: 5.8125rem;
+  top: -27.74375rem;
+  right: 18.125rem;
   z-index: 3;
 }
 .testimonialImageTwoParent {
@@ -444,33 +436,33 @@
   max-width: 100%;
 }
 .frameChild4 {
-  height: 26.3px;
-  width: 102.3px;
+  height: 1.64375rem;
+  width: 6.39375rem;
   position: relative;
-  backdrop-filter: blur(13.47px);
-  border-radius: 6.73px;
+  backdrop-filter: blur(0.841875rem);
+  border-radius: 0.420625rem;
   background-color: var(--color-lightsteelblue-200);
   display: none;
 }
 .fourthRating,
 .fourthRating1 {
   position: absolute;
-  top: 2.3px;
+  top: 0.14375rem;
   left: 0;
-  border-radius: 0.67px;
+  border-radius: 0.041875rem;
   background-color: var(--color-white);
-  width: 2px;
-  height: 4.7px;
+  width: 0.125rem;
+  height: 0.29375rem;
   z-index: 1;
 }
 .fourthRating1 {
   top: 0;
-  left: 3.4px;
-  height: 7.1px;
+  left: 0.2125rem;
+  height: 0.44375rem;
 }
 .fourthRatingParent {
-  width: 5.4px;
-  height: 7.1px;
+  width: 0.3375rem;
+  height: 0.44375rem;
   position: relative;
 }
 .singleAvatarContainer {
@@ -481,10 +473,10 @@
   padding: 0 0 var(--padding-9xs);
 }
 .fifthImage {
-  width: 2px;
-  height: 9.4px;
+  width: 0.125rem;
+  height: 0.5875rem;
   position: relative;
-  border-radius: 0.67px;
+  border-radius: 0.041875rem;
   background-color: var(--color-white);
   flex-shrink: 0;
   z-index: 1;
@@ -500,7 +492,7 @@
   position: relative;
   font-weight: 600;
   display: inline-block;
-  min-width: 73.4px;
+  min-width: 4.5875rem;
   flex-shrink: 0;
   z-index: 1;
 }
@@ -513,8 +505,8 @@
   gap: var(--gap-6xs-8);
 }
 .rectangleParent1 {
-  backdrop-filter: blur(13.47px);
-  border-radius: 6.73px;
+  backdrop-filter: blur(0.841875rem);
+  border-radius: 0.420625rem;
   background-color: var(--color-lightsteelblue-200);
   align-items: flex-end;
   padding: var(--padding-9xs) var(--padding-7xs) var(--padding-8xs-1);
@@ -523,7 +515,7 @@
 }
 .maskGroupParent {
   align-self: stretch;
-  filter: drop-shadow(17px 17px 40px rgba(13, 15, 28, 0.1));
+  filter: drop-shadow(1.0625rem 1.0625rem 2.5rem rgba(13, 15, 28, 0.1));
   flex-direction: row;
   padding: var(--padding-139xl-3) var(--padding-3xs) var(--padding-2xs-7);
   position: relative;
@@ -537,17 +529,16 @@
   justify-content: flex-start;
 }
 .deeplyNestedMaskInner {
-  width: 202px;
   flex-direction: column;
   padding: var(--padding-34xl) 0 0;
   box-sizing: border-box;
-  margin-left: -106px;
+  margin-left: -6.625rem;
   font-size: var(--font-size-sm-5);
 }
 .deeplyNestedMask {
   flex: 1;
   flex-direction: row;
-  min-width: 571px;
+  min-width: 35.6875rem;
   max-width: 100%;
 }
 .userInterface {
@@ -565,7 +556,6 @@
   max-width: 100%;
 }
 .aUserInterfaceDesignedForWrapper {
-  width: 548px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -578,7 +568,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: 0 15px 44px rgba(13, 15, 28, 0.12);
+  box-shadow: 0 0.9375rem 2.75rem rgba(13, 15, 28, 0.12);
   border-radius: 50%;
   background-color: var(--color-gray-100);
   width: 100%;
@@ -589,32 +579,33 @@
 .sixthImage2,
 .sixthImage3 {
   position: absolute;
-  top: 17px;
-  left: 17px;
+  top: 1.0625rem;
+  left: 1.0625rem;
   border-radius: var(--br-11xs);
   background-color: var(--color-firebrick-100);
-  width: 11.8px;
-  height: 11.8px;
+  width: 0.7375rem;
+  height: 0.7375rem;
   z-index: 1;
 }
 .sixthImage1,
 .sixthImage2,
 .sixthImage3 {
-  top: 31.2px;
+  top: 1.95rem;
 }
 .sixthImage2,
 .sixthImage3 {
-  top: 17px;
-  left: 31.8px;
+  top: 1.0625rem;
+  left: 1.9875rem;
 }
 .sixthImage3 {
-  top: 31.2px;
+  top: 1.95rem;
   background-color: var(--color-darkorange-100);
 }
 .seventhImageParent {
-  height: 60px;
+  height: 3.75rem;
   flex: 1;
   position: relative;
+  align-items: center;
 }
 .descriptionElements,
 .elementContainer {
@@ -627,7 +618,7 @@
   flex-direction: row;
 }
 .descriptionElements {
-  width: 60px;
+  width: 3.75rem;
   flex-direction: column;
   padding: var(--padding-3xs) 0 0;
   box-sizing: border-box;
@@ -638,46 +629,43 @@
   letter-spacing: 0.02em;
   line-height: 180%;
   display: inline-block;
-  min-width: 288px;
-  max-width: 100%;
 }
 .descriptionContent {
-  width: 545px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: var(--gap-23xl);
   max-width: 100%;
 }
 .frameChild5,
 .frameChild6 {
   position: absolute;
-  top: 6px;
-  left: 8px;
+  top: 0.375rem;
+  left: 0.5rem;
   border-radius: var(--br-11xs);
   background-color: var(--color-firebrick-100);
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .frameChild6 {
   top: 0;
   left: 0;
   background-color: var(--color-darkorange-100);
-  width: 21.2px;
-  height: 21.2px;
+  width: 1.325rem;
+  height: 1.325rem;
   z-index: 1;
 }
 .rectangleParent2 {
   position: absolute;
-  top: 17px;
-  left: 16px;
-  width: 28px;
-  height: 26px;
+  top: 1.0625rem;
+  left: 1rem;
+  width: 1.75rem;
+  height: 1.625rem;
   z-index: 1;
 }
 .featureElements {
-  width: 60px;
+  width: 3.75rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -687,15 +675,15 @@
 }
 .users2Icon {
   position: absolute;
-  top: 17px;
-  left: 15px;
-  width: 30px;
-  height: 26px;
+  top: 1.0625rem;
+  left: 0.9375rem;
+  width: 1.875rem;
+  height: 1.625rem;
   overflow: hidden;
   z-index: 1;
 }
 .featureContent1 {
-  width: 60px;
+  width: 3.75rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -709,7 +697,7 @@
   letter-spacing: 0.02em;
   line-height: 180%;
   display: inline-block;
-  min-width: 298px;
+  min-width: 18.625rem;
   max-width: 100%;
 }
 .featureContainer,
@@ -746,10 +734,8 @@
   gap: var(--gap-32xl);
 }
 .frameWrapper {
-  width: 561px;
   padding: var(--padding-22xl) 0 0;
   box-sizing: border-box;
-  min-width: 561px;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
   font-family: var(--font-poppins);
@@ -758,34 +744,36 @@
 .landingInner {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   max-width: 100%;
+  width: 90.975rem;
 }
 .deeplyNestedMaskParent {
-  width: 1580px;
   gap: var(--gap-121xl);
 }
 .landingInner {
-  align-self: stretch;
-  padding: 0 var(--padding-xl) var(--padding-191xl);
+  width: 119.0125rem;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-xl);
   box-sizing: border-box;
   flex-shrink: 0;
   text-align: left;
-  font-size: var(--font-size-3xs);
-  color: var(--color-white);
-  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-21xl);
+  color: var(--color-firebrick-100);
+  font-family: var(--font-poppins);
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
   .frameWrapper {
     flex: 1;
   }
   .deeplyNestedMaskParent {
     gap: var(--gap-51xl);
     flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .doubleMask {
     flex: 1;
   }
@@ -807,7 +795,7 @@
   }
   .aUserInterfaceContainer {
     font-size: var(--font-size-13xl);
-    line-height: 51px;
+    line-height: 3.1875rem;
   }
   .descriptionContent,
   .featureContainer1 {
@@ -830,11 +818,14 @@
     gap: var(--gap-16xl);
   }
   .landingInner {
-    padding-bottom: var(--padding-117xl);
+    padding-bottom: var(--padding-xl);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .call,
   .present {
     font-size: var(--font-size-lg);
@@ -850,12 +841,12 @@
   }
   .aUserInterfaceContainer {
     font-size: var(--font-size-5xl);
-    line-height: 38px;
+    line-height: 2.375rem;
   }
   .teachersCanEasily,
   .teachersDontGet {
     font-size: var(--font-size-lg);
-    line-height: 32px;
+    line-height: 2rem;
   }
   .deeplyNestedMaskParent {
     gap: var(--gap-mid);

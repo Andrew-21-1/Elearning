@@ -1,7 +1,7 @@
 footer {
   background-color: #bf4628;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
   color: #ffffff;
   text-align: center;
 }
@@ -15,12 +15,12 @@ footer p {
   align-items: center;
   justify-content: center;
   color: #612d29 !important;
-  font-family: "Livvic";
-  font-size: 18px;
+  font-family: 'Livvic';
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400 !important;
   line-height: normal;
-  letter-spacing: 0.44px;
+  letter-spacing: 0.0275rem;
   --bs-nav-link-color: #612d29 !important;
   --bs-nav-link-hover-color: #612d29 !important;
   --bs-nav-tabs-link-active-border-color: #612d29 !important;
@@ -30,10 +30,10 @@ footer p {
 p {
   color: #b2b3cf;
   text-align: center;
-  font-family: "Poppins";
-  font-size: 22px;
+  font-family: 'Poppins';
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.88px;
+  letter-spacing: 0.055rem;
 }

@@ -1,3 +1,4 @@
+/* General Navbar Styles */
 .navbar {
   background-color: #bf4628 !important;
   width: 100%;
@@ -6,31 +7,133 @@
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center; /* Center the content vertically */
+}
+
+.navbar-brand img {
+  max-width: 100%; /* Ensure the image scales down within its container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .nav-link {
   color: #612d29;
-  font-family: "Livvic";
-  font-size: 22px;
+  font-family: 'Livvic';
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 900 !important;
   line-height: normal;
-  letter-spacing: 0.44px;
-}
-.navbar-collapse {
+  letter-spacing: 0.0275rem;
   display: flex;
-  margin-left: 50px;
+  margin: 0.9375rem;
 }
 
-.nav-link {
+.navbar-collapse {
   display: flex;
-  margin: 15px;
+  justify-content: space-between; /* Align items properly */
+  align-items: center; /* Center items vertically */
 }
+
 .navbar a:hover,
 .navbar a.active {
   color: white; /* Change to white on hover and when selected */
 }
+
 .navbar a {
   text-decoration: none;
   transition: color 0.3s ease; /* Smooth transition */
+}
+
+.logout-button {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 2.0625rem;
+  color: black;
+  border: 0.125rem solid white;
+  width: 6.25rem;
+  padding: 0.625rem;
+  color: #612d29;
+  font-family: 'Livvic';
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 900 !important;
+  line-height: normal;
+  letter-spacing: 0.0275rem;
+}
+
+/* Responsive Styles */
+
+/* Mobile Styles (up to 600px) */
+@media (max-width: 600px) {
+  .navbar-collapse {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-link {
+    margin: 0.5rem 0; /* Reduce margins for smaller screens */
+    font-size: 1.125rem; /* Smaller font size for mobile */
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem; /* Smaller brand font size for mobile */
+  }
+
+  .navbar-brand img {
+    max-width: 80%; /* Adjust image size for mobile screens */
+  }
+
+  .logout-button {
+    width: 5rem; /* Adjust button width for mobile */
+    font-size: 0.8125rem; /* Smaller font size for mobile */
+  }
+}
+
+/* Tablet Styles (600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .navbar-collapse {
+    flex-direction: row; /* Align items horizontally */
+  }
+
+  .nav-link {
+    margin: 0.5rem; /* Adjust margins for tablets */
+    font-size: 1.25rem; /* Slightly smaller font size for tablets */
+  }
+
+  .navbar-brand {
+    font-size: 1.375rem; /* Adjust brand font size for tablets */
+  }
+
+  .navbar-brand img {
+    max-width: 90%; /* Adjust image size for tablet screens */
+  }
+
+  .logout-button {
+    width: 5.5rem; /* Adjust button width for tablets */
+    font-size: 0.875rem; /* Adjust font size for tablets */
+  }
+}
+
+/* Desktop Styles (900px and above) */
+@media (min-width: 901px) {
+  .navbar-collapse {
+    flex-direction: row; /* Default layout for larger screens */
+  }
+
+  .nav-link {
+    margin: 0.9375rem; /* Default margins for desktop */
+    font-size: 1.375rem; /* Default font size for desktop */
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem; /* Default brand font size for desktop */
+  }
+
+  .navbar-brand img {
+    max-width: 100%; /* Default image size for desktop screens */
+  }
+
+  .logout-button {
+    width: 6.25rem; /* Default button width for desktop */
+    font-size: 0.9375rem; /* Default font size for desktop */
+  }
 }

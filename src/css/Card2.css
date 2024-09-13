@@ -1,44 +1,43 @@
-.card-container{
-    border-radius: 69px;
-    background-color: #FFE9EA;
-    padding: 40px;
+.card-container {
+  border-radius: 4.3125rem;
+  background-color: #ffe9ea;
+  padding: 2.5rem;
 }
 
-.header-row{
-    display: flex;
-    justify-content:center !important;
-    align-items: baseline;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    border-radius: 69px;
-    width: 95% !important;
-    margin: 0px !important;
+.header-row {
+  display: flex;
+  justify-content: center !important;
+  align-items: baseline;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: white;
+  border-radius: 4.3125rem;
+  width: 95% !important;
+  margin: 0rem !important;
 }
-.row{
-    margin: 0px !important;
+.row {
+  margin: 0rem !important;
 }
 
-
-.student{
-display: flex;
-flex-direction: row;
+.student {
+  display: flex;
+  flex-direction: row;
 }
-.row-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.row-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
+.header {
+  display: flex;
+  justify-content: space-between;
 }
-p{
-    margin: 0px!important;
-    color: #690061;
-    font-family: "Be Vietnam";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+p {
+  margin: 0rem !important;
+  color: #690061;
+  font-family: 'Be Vietnam';
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

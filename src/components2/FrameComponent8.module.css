@@ -1,31 +1,21 @@
 .discussionsHeaderChild {
-  height: 33.8px;
-  width: 35px;
-  position: absolute;
   margin: 0 !important;
-  top: 78.1px;
-  left: 701.5px;
   object-fit: contain;
 }
 .discussionsHeaderItem {
-  height: 193px;
-  width: 196.8px;
-  position: absolute;
   margin: 0 !important;
-  bottom: -19.5px;
-  left: -18.8px;
-  border-radius: 18.83px;
+  border-radius: 1.176875rem;
   background-color: var(--color-firebrick-100);
 }
 .frameChild {
   position: absolute;
-  top: -31.1px;
-  right: -34.9px;
+  top: -1.94375rem;
+  right: -2.18125rem;
   border-radius: 50%;
   border: 0 solid var(--color-firebrick-100);
   box-sizing: border-box;
-  width: 113px;
-  height: 113px;
+  width: 7.0625rem;
+  height: 7.0625rem;
 }
 .frameItem {
   position: absolute;
@@ -35,26 +25,26 @@
   height: 100%;
 }
 .frameInner {
-  height: 38.7px;
-  width: 116px;
+  height: 2.41875rem;
+  width: 7.25rem;
   position: relative;
-  box-shadow: 0 6.4px 15.47px rgba(52, 101, 225, 0.3);
-  border-radius: 38.67px;
+  box-shadow: 0 0.4rem 0.966875rem rgba(52, 101, 225, 0.3);
+  border-radius: 2.416875rem;
   background-color: var(--color-royalblue-200);
   display: none;
 }
 .present {
   position: relative;
   display: inline-block;
-  min-width: 60px;
+  min-width: 3.75rem;
   z-index: 1;
 }
 .rectangleParent {
   position: absolute;
-  top: 295.8px;
-  left: 36.1px;
-  box-shadow: 0 6.4px 15.47px rgba(52, 101, 225, 0.3);
-  border-radius: 38.67px;
+  top: 18.4875rem;
+  left: 2.25625rem;
+  box-shadow: 0 0.4rem 0.966875rem rgba(52, 101, 225, 0.3);
+  border-radius: 2.416875rem;
   background-color: var(--color-royalblue-200);
   display: flex;
   flex-direction: row;
@@ -65,17 +55,17 @@
   font-size: var(--font-size-base-8);
 }
 .rectangleDiv {
-  height: 38.7px;
-  width: 116px;
+  height: 2.41875rem;
+  width: 7.25rem;
   position: relative;
-  box-shadow: 0 6.4px 15.47px rgba(202, 47, 93, 0.3);
-  border-radius: 38.67px;
+  box-shadow: 0 0.4rem 0.966875rem rgba(202, 47, 93, 0.3);
+  border-radius: 2.416875rem;
   background-color: var(--color-crimson-200);
   display: none;
 }
 .phone1Icon {
-  width: 12.9px;
-  height: 12.9px;
+  width: 0.80625rem;
+  height: 0.80625rem;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
@@ -95,7 +85,7 @@
   font-family: var(--font-nunito-sans);
   color: var(--color-white);
   text-align: left;
-  min-width: 31.6px;
+  min-width: 1.975rem;
   z-index: 1;
 }
 .rectangleGroup {
@@ -104,10 +94,10 @@
   padding: var(--padding-5xs-8) var(--padding-13xl) var(--padding-4xs-3);
   background-color: var(--color-crimson-200);
   position: absolute;
-  top: 295.8px;
-  left: 177.9px;
-  box-shadow: 0 6.4px 15.47px rgba(202, 47, 93, 0.3);
-  border-radius: 38.67px;
+  top: 18.4875rem;
+  left: 11.11875rem;
+  box-shadow: 0 0.4rem 0.966875rem rgba(202, 47, 93, 0.3);
+  border-radius: 2.416875rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -124,9 +114,9 @@
   height: 100%;
 }
 .frameChild1 {
-  top: 1.9px;
-  backdrop-filter: blur(9.42px);
-  border-radius: 18.83px;
+  top: 0.11875rem;
+  backdrop-filter: blur(0.58875rem);
+  border-radius: 1.176875rem;
   background-color: var(--color-cornflowerblue);
   z-index: 2;
 }
@@ -137,25 +127,25 @@
   z-index: 1;
 }
 .controlsItem {
-  top: 57.5px;
-  left: 9.4px;
-  width: 111px;
-  height: 111px;
+  top: 3.59375rem;
+  left: 0.5875rem;
+  width: 6.9375rem;
+  height: 6.9375rem;
   object-fit: contain;
   z-index: 4;
 }
 .controls {
   position: absolute;
-  top: 69.6px;
-  left: 35.8px;
-  width: 193.4px;
-  height: 192px;
+  top: 4.35rem;
+  left: 2.2375rem;
+  width: 12.0875rem;
+  height: 12rem;
 }
 .ellipseParent {
-  height: 365.5px;
-  width: 658.1px;
+  height: 22.84375rem;
+  width: 41.13125rem;
   position: relative;
-  min-width: 658.1px;
+  min-width: 41.13125rem;
   max-width: 100%;
   z-index: 1;
 }
@@ -164,7 +154,7 @@
 }
 .oneOnOneDiscussions {
   margin: 0;
-  width: 274px;
+  width: 17.125rem;
   position: relative;
   font-size: inherit;
   line-height: 160%;
@@ -192,11 +182,10 @@
   gap: var(--gap-xl);
 }
 .discussionTitle {
-  width: 540px;
   justify-content: flex-end;
   padding: 0 0 var(--padding-smi-6);
   box-sizing: border-box;
-  min-width: 540px;
+  min-width: 33.75rem;
   max-width: 100%;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
@@ -207,7 +196,6 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: space-between;
   max-width: 100%;
   gap: var(--gap-xl);
 }
@@ -218,27 +206,27 @@
 }
 .frameChild2 {
   align-self: stretch;
-  height: 368.1px;
-  box-shadow: 0 18.8px 47.08px rgba(47, 50, 125, 0.1);
-  border-radius: 18.83px;
+  height: 23.00625rem;
+  box-shadow: 0 1.175rem 2.9425rem rgba(47, 50, 125, 0.1);
+  border-radius: 1.176875rem;
   background-color: var(--color-white);
 }
 .previewChild {
-  height: 24.5px;
-  width: 591.3px;
-  border-radius: 18.83px 18.83px 0 0;
+  height: 1.53125rem;
+  width: 36.95625rem;
+  border-radius: 1.176875rem 1.176875rem 0 0;
   background-color: var(--color-whitesmoke);
   max-width: 100%;
 }
 .previewItem {
-  height: 12.2px;
-  width: 49px;
+  height: 0.7625rem;
+  width: 3.0625rem;
   position: relative;
   z-index: 2;
 }
 .preview {
   align-self: stretch;
-  border-radius: 18.83px 18.83px 0 0;
+  border-radius: 1.176875rem 1.176875rem 0 0;
   background-color: var(--color-whitesmoke);
   display: flex;
   flex-direction: row;
@@ -256,14 +244,14 @@
   z-index: 1;
 }
 .groupIcon {
-  height: 192.5px;
-  width: 199.2px;
+  height: 12.03125rem;
+  width: 12.45rem;
   object-fit: cover;
 }
 .lineDiv {
-  height: 198.7px;
-  width: 0.9px;
-  border-right: 0.9px solid var(--color-lavender-200);
+  height: 12.41875rem;
+  width: 0.05625rem;
+  border-right: 0.05625rem solid var(--color-lavender-200);
   box-sizing: border-box;
 }
 .maskGroupIcon {
@@ -281,33 +269,33 @@
   object-fit: cover;
 }
 .frameChild3 {
-  height: 25.9px;
-  width: 131.9px;
+  height: 1.61875rem;
+  width: 8.24375rem;
   position: relative;
-  backdrop-filter: blur(13.26px);
-  border-radius: 6.63px;
+  backdrop-filter: blur(0.82875rem);
+  border-radius: 0.414375rem;
   background-color: var(--color-lightsteelblue-200);
   display: none;
 }
 .image,
 .image1 {
   position: absolute;
-  top: 2.3px;
+  top: 0.14375rem;
   left: 0;
-  border-radius: 0.66px;
+  border-radius: 0.04125rem;
   background-color: var(--color-white);
-  width: 2px;
-  height: 4.6px;
+  width: 0.125rem;
+  height: 0.2875rem;
   z-index: 1;
 }
 .image1 {
   top: 0;
-  left: 3.3px;
-  height: 7px;
+  left: 0.20625rem;
+  height: 0.4375rem;
 }
 .imageParent {
-  width: 5.3px;
-  height: 7px;
+  width: 0.33125rem;
+  height: 0.4375rem;
   position: relative;
 }
 .imageContainer {
@@ -318,10 +306,10 @@
   padding: 0 0 var(--padding-9xs);
 }
 .name {
-  width: 2px;
-  height: 9.3px;
+  width: 0.125rem;
+  height: 0.58125rem;
   position: relative;
-  border-radius: 0.66px;
+  border-radius: 0.04125rem;
   background-color: var(--color-white);
   z-index: 1;
 }
@@ -336,7 +324,7 @@
   position: relative;
   font-weight: 600;
   display: inline-block;
-  min-width: 104px;
+  min-width: 6.5rem;
   z-index: 1;
 }
 .nameContainerParent {
@@ -353,8 +341,8 @@
   justify-content: flex-start;
 }
 .groupDiv {
-  backdrop-filter: blur(13.26px);
-  border-radius: 6.63px;
+  backdrop-filter: blur(0.82875rem);
+  border-radius: 0.414375rem;
   background-color: var(--color-lightsteelblue-200);
   align-items: flex-end;
   padding: var(--padding-9xs) var(--padding-7xs) var(--padding-9xs-9);
@@ -367,7 +355,7 @@
   align-items: flex-start;
 }
 .maskGroupParent {
-  width: 198.9px;
+  width: 12.43125rem;
   padding: var(--padding-136xl-7) var(--padding-3xs) var(--padding-2xs-6);
   box-sizing: border-box;
   position: relative;
@@ -387,7 +375,7 @@
   box-sizing: border-box;
 }
 .privateDiscussion {
-  margin-bottom: -2.8px;
+  margin-bottom: -0.175rem;
   position: relative;
   line-height: 160%;
   display: inline-block;
@@ -395,7 +383,7 @@
   z-index: 1;
 }
 .privateDiscussionContent {
-  height: 33px;
+  height: 2.0625rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -406,7 +394,7 @@
 .yourVideoCant {
   position: relative;
   font-size: var(--font-size-base-9);
-  line-height: 27.3px;
+  line-height: 1.70625rem;
   font-weight: 600;
   color: var(--color-darkgray);
   flex-shrink: 0;
@@ -418,23 +406,23 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-width: 171px;
+  min-width: 10.6875rem;
 }
 .frameChild4,
 .frameChild5 {
   position: relative;
-  border-radius: 56.49px;
+  border-radius: 3.530625rem;
   display: none;
 }
 .frameChild4 {
-  height: 27.3px;
-  width: 172.3px;
-  filter: blur(50.84px);
+  height: 1.70625rem;
+  width: 10.76875rem;
+  filter: blur(3.1775rem);
   background-color: var(--color-tomato);
 }
 .frameChild5 {
-  height: 54.6px;
-  width: 197.7px;
+  height: 3.4125rem;
+  width: 12.35625rem;
   background: linear-gradient(105.5deg, #f55454, #e6422b);
 }
 .endDiscussion {
@@ -455,10 +443,9 @@
 .groupButton {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-smi-3) var(--padding-xl) var(--padding-xs-2)
-    var(--padding-2xl);
+  padding: var(--padding-smi-3) var(--padding-xl) var(--padding-xs-2) var(--padding-2xl);
   background-color: transparent;
-  border-radius: 56.49px;
+  border-radius: 3.530625rem;
   background: linear-gradient(105.5deg, #f55454, #e6422b);
   align-items: flex-start;
   z-index: 1;
@@ -495,17 +482,17 @@
 .discussionsHeader,
 .rectangleContainer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   max-width: 100%;
 }
 .rectangleContainer {
-  width: 591.3px;
+  width: 36.95625rem;
   margin: 0 !important;
   position: absolute;
-  bottom: -102.4px;
-  left: 103.6px;
-  box-shadow: 0 18.8px 47.08px rgba(47, 50, 125, 0.1);
-  border-radius: 18.83px;
+  bottom: -6.4rem;
+  left: 6.475rem;
+  box-shadow: 0 1.175rem 2.9425rem rgba(47, 50, 125, 0.1);
+  border-radius: 1.176875rem;
   background-color: var(--color-white);
   flex-direction: column;
   align-items: flex-end;
@@ -516,17 +503,18 @@
   font-size: var(--font-size-sm-3);
 }
 .discussionsHeader {
+  padding: var(--padding-19xl);
   align-self: stretch;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
 }
 .frameChild6 {
-  height: 80px;
-  width: 280px;
+  height: 5rem;
+  width: 17.5rem;
   position: relative;
   border-radius: var(--br-61xl);
-  border: 1px solid var(--color-firebrick-100);
+  border: 0.0625rem solid var(--color-firebrick-100);
   box-sizing: border-box;
   display: none;
 }
@@ -538,7 +526,7 @@
   font-family: var(--font-nunito-sans);
   color: var(--color-lightseagreen-100);
   text-align: left;
-  text-shadow: 1px 0 0#bf4628, 0 1px 0#bf4628, -1px 0 0#bf4628, 0-1px 0#bf4628;
+  text-shadow: 0.0625rem 0 0#bf4628, 0 0.0625rem 0#bf4628, -0.0625rem 0 0#bf4628, 0-0.0625rem 0#bf4628;
   z-index: 1;
 }
 .featuresButtonContainer,
@@ -549,7 +537,7 @@
 }
 .rectangleParent1 {
   cursor: pointer;
-  border: 1px solid var(--color-firebrick-100);
+  border: 0.0625rem solid var(--color-firebrick-100);
   padding: var(--padding-mid) var(--padding-19xl) var(--padding-base);
   background-color: transparent;
   border-radius: var(--br-61xl);
@@ -558,40 +546,44 @@
 }
 .rectangleParent1:hover {
   background-color: var(--color-coral-300);
-  border: 1px solid var(--color-coral-100);
+  border: 0.0625rem solid var(--color-coral-100);
   box-sizing: border-box;
 }
 .featuresButtonContainer {
-  width: 1434px;
+  width: 89.625rem;
   justify-content: center;
   padding: 0 var(--padding-xl);
   box-sizing: border-box;
   max-width: 100%;
 }
 .discussions {
-  width: 1467.2px;
+  width: 90.975rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: var(--gap-233xl-4);
   max-width: 100%;
 }
 .discussionsWrapper {
-  width: 1886px;
+  width: 98vw;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 98%;
   flex-shrink: 0;
   text-align: left;
   font-size: var(--font-size-4xs-4);
   color: var(--color-white);
   font-family: var(--font-nunito-sans);
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
+  .discussionsHeader {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .discussionTitle,
   .ellipseParent {
     flex: 1;
@@ -603,30 +595,38 @@
     gap: var(--gap-107xl);
   }
   .discussionsWrapper {
-    padding-bottom: var(--padding-595xl);
+    padding-bottom: var(--padding-xl);
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 70.3125rem) {
   .discussionsWrapper {
-    padding-bottom: var(--padding-380xl);
+    padding-bottom: var(--padding-xl);
     box-sizing: border-box;
   }
+  .discussionsHeader {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
+  .discussionsHeader {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .ellipseParent {
     min-width: 100%;
   }
   .oneOnOneDiscussions {
     font-size: var(--font-size-13xl);
-    line-height: 51px;
+    line-height: 3.1875rem;
   }
   .discussionTitle {
     min-width: 100%;
   }
   .lineDiv {
     width: 100%;
-    height: 0.9px;
+    height: 0.05625rem;
   }
   .frameParent {
     flex-wrap: wrap;
@@ -635,18 +635,22 @@
     gap: var(--gap-44xl);
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
+  .discussionsHeader {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .oneOnOneDiscussions {
     font-size: var(--font-size-5xl);
-    line-height: 38px;
+    line-height: 2.375rem;
   }
   .privateDiscussion,
   .teachersAndTeacher {
     font-size: var(--font-size-lg);
-    line-height: 32px;
+    line-height: 2rem;
   }
   .privateDiscussion {
-    line-height: 29px;
+    line-height: 1.8125rem;
   }
   .endDiscussion {
     font-size: var(--font-size-mid);
@@ -655,7 +659,7 @@
     gap: var(--gap-13xl);
   }
   .discussionsWrapper {
-    padding-bottom: var(--padding-240xl);
+    padding-bottom: var(--padding-xl);
     box-sizing: border-box;
   }
 }

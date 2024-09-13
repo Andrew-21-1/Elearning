@@ -6,7 +6,7 @@
 }
 .classManagementToolsContainer {
   margin: 0;
-  width: 420.8px;
+  width: 26.3rem;
   position: relative;
   font-size: inherit;
   line-height: 160%;
@@ -36,15 +36,12 @@
   gap: var(--gap-xl);
 }
 .frameWrapper {
-  width: 645.7px;
-  padding: 0 0 var(--padding-61xl);
+  padding: 0 0 var(--padding-xl);
   box-sizing: border-box;
-  min-width: 645.7px;
-  min-height: 387px;
 }
 .gradebookIcon {
-  height: 43.9px;
-  width: 44px;
+  height: 2.74375rem;
+  width: 2.75rem;
   position: relative;
   border-radius: 50%;
   background-color: var(--color-firebrick-100);
@@ -59,17 +56,17 @@
 }
 .gradebookTitleChild {
   align-self: stretch;
-  height: 479.2px;
+  height: 29.95rem;
   position: relative;
-  box-shadow: 0 10px 48px rgba(40, 43, 110, 0.1);
+  box-shadow: 0 0.625rem 3rem rgba(40, 43, 110, 0.1);
   border-radius: var(--br-xl);
   background-color: var(--color-white);
   display: none;
   z-index: 0;
 }
 .titleChild {
-  height: 69.9px;
-  width: 717.7px;
+  height: 4.36875rem;
+  width: 44.85625rem;
   position: relative;
   border-radius: var(--br-xl) var(--br-xl) 0 0;
   background-color: var(--color-firebrick-100);
@@ -79,20 +76,19 @@
 .gradebook {
   position: relative;
   font-size: var(--font-size-3xl);
-  line-height: 36px;
+  line-height: 2.25rem;
   font-weight: 600;
   font-family: var(--font-poppins);
   color: var(--color-azure);
   text-align: left;
   display: inline-block;
-  min-width: 125px;
+  min-width: 7.8125rem;
   z-index: 3;
 }
 .title {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-mid-9) var(--padding-xl) var(--padding-base)
-    var(--padding-2xl);
+  padding: var(--padding-mid-9) var(--padding-xl) var(--padding-base) var(--padding-2xl);
   background-color: var(--color-firebrick-100);
   align-self: stretch;
   border-radius: var(--br-xl) var(--br-xl) 0 0;
@@ -108,8 +104,8 @@
   background-color: var(--color-coral-100);
 }
 .studentChild {
-  height: 49.9px;
-  width: 100px;
+  height: 3.11875rem;
+  width: 6.25rem;
   position: relative;
   border-radius: var(--br-41xl);
   background-color: var(--color-lightcyan-200);
@@ -120,13 +116,13 @@
   line-height: 160%;
   font-weight: 500;
   display: inline-block;
-  min-width: 36px;
+  min-width: 2.25rem;
   z-index: 5;
 }
 .student {
   position: absolute;
-  top: 42.9px;
-  left: 138.9px;
+  top: 2.68125rem;
+  left: 8.68125rem;
   border-radius: var(--br-41xl);
   background-color: var(--color-lightcyan-200);
   display: flex;
@@ -138,28 +134,24 @@
 }
 .gradesChild {
   position: absolute;
-  top: 32px;
+  top: 2rem;
   left: 0;
   background-color: var(--color-firebrick-100);
-  width: 126.9px;
-  height: 29.9px;
+  width: 7.93125rem;
+  height: 1.86875rem;
   z-index: 2;
 }
 .maskGroupIcon {
-  position: absolute;
   top: 0;
-  left: 77.9px;
-  width: 85.2px;
-  height: 85.1px;
-  object-fit: cover;
+
   z-index: 3;
 }
 .starredIcon {
   position: absolute;
-  top: 68.9px;
-  left: 106.9px;
-  width: 32px;
-  height: 31.9px;
+  top: 4.30625rem;
+  left: 6.68125rem;
+  width: 2rem;
+  height: 1.99375rem;
   z-index: 5;
 }
 .grades {
@@ -168,32 +160,32 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 163.1px;
+  width: 10.19375rem;
 }
 .list {
   align-self: stretch;
-  height: 100.8px;
+  height: 6.3rem;
   position: relative;
 }
 .studentList {
-  width: 238.9px;
+  width: 14.93125rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-3xl-9) 0 0;
   box-sizing: border-box;
-  min-width: 238.9px;
+  min-width: 14.93125rem;
 }
 .frameChild {
   border: 0;
   outline: 0;
   background-color: var(--color-crimson-100);
   position: absolute;
-  top: 32.9px;
-  left: 36px;
-  width: 145.9px;
-  height: 29.9px;
+  top: 2.05625rem;
+  left: 2.25rem;
+  width: 9.11875rem;
+  height: 1.86875rem;
   z-index: 2;
 }
 .maskGroupIcon1 {
@@ -203,7 +195,7 @@
   bottom: 0;
   left: 0;
   max-height: 100%;
-  width: 85.2px;
+  width: 5.325rem;
   object-fit: cover;
   z-index: 3;
 }
@@ -213,16 +205,16 @@
   margin: 0 !important;
 }
 .rectangleParent {
-  height: 85.1px;
-  width: 181.9px;
-  right: 0.1px;
-  bottom: -54.2px;
+  height: 5.31875rem;
+  width: 11.36875rem;
+  right: 0.00625rem;
+  bottom: -3.3875rem;
 }
 .studentNameChild {
-  height: 49.9px;
-  width: 100px;
-  bottom: 28px;
-  left: -7px;
+  height: 3.11875rem;
+  width: 6.25rem;
+  bottom: 1.75rem;
+  left: -0.4375rem;
   border-radius: var(--br-41xl);
   background-color: var(--color-lavender-300);
   z-index: 4;
@@ -232,10 +224,10 @@
   outline: 0;
   background-color: var(--color-salmon-100);
   position: absolute;
-  top: 27.9px;
-  left: 43px;
-  width: 304.9px;
-  height: 29.9px;
+  top: 1.74375rem;
+  left: 2.6875rem;
+  width: 19.05625rem;
+  height: 1.86875rem;
   z-index: 2;
 }
 .name2,
@@ -243,17 +235,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 347.9px;
-  height: 85.1px;
+  width: 21.74375rem;
+  height: 5.31875rem;
 }
 .name2 {
-  top: 77.8px;
-  left: 29px;
+  top: 4.8625rem;
+  left: 1.8125rem;
   line-height: 160%;
   font-weight: 500;
   display: inline-block;
-  width: 29px;
-  height: 69.9px;
+  width: 1.8125rem;
+  height: 4.36875rem;
   z-index: 5;
 }
 .name1,
@@ -262,19 +254,19 @@
   max-width: 100%;
 }
 .name1 {
-  height: 147.7px;
+  height: 9.23125rem;
   flex: 1;
 }
 .studentName {
-  width: 347.9px;
+  width: 21.74375rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
 .scoreEntryChild {
-  height: 49.9px;
-  width: 100px;
+  height: 3.11875rem;
+  width: 6.25rem;
   position: relative;
   border-radius: var(--br-41xl);
   background-color: var(--color-pink);
@@ -285,7 +277,7 @@
   line-height: 160%;
   font-weight: 500;
   display: inline-block;
-  min-width: 27px;
+  min-width: 1.6875rem;
   z-index: 5;
 }
 .score,
@@ -296,7 +288,7 @@
   box-sizing: border-box;
 }
 .scoreEntry {
-  width: 100px;
+  width: 6.25rem;
   border-radius: var(--br-41xl);
   background-color: var(--color-pink);
   justify-content: flex-start;
@@ -304,7 +296,7 @@
   z-index: 4;
 }
 .score {
-  width: 310.8px;
+  width: 19.425rem;
   justify-content: center;
   padding: 0 var(--padding-xl);
 }
@@ -313,10 +305,10 @@
   outline: 0;
   background-color: var(--color-lightcoral);
   position: absolute;
-  top: 32.9px;
+  top: 2.05625rem;
   left: 0;
-  width: 259.9px;
-  height: 29.9px;
+  width: 16.24375rem;
+  height: 1.86875rem;
   z-index: 2;
 }
 .maskGroupIcon3 {
@@ -324,23 +316,23 @@
   height: 100%;
   top: 0;
   bottom: 0;
-  left: 219.9px;
+  left: 13.74375rem;
   max-height: 100%;
-  width: 85.2px;
+  width: 5.325rem;
   object-fit: cover;
   z-index: 3;
 }
 .scoreProgress {
-  height: 85.1px;
-  width: 305.1px;
+  height: 5.31875rem;
+  width: 19.06875rem;
   position: absolute;
   margin: 0 !important;
-  top: -47.9px;
-  left: -280.8px;
+  top: -2.99375rem;
+  left: -17.55rem;
 }
 .percentageChild {
-  height: 49.9px;
-  width: 100px;
+  height: 3.11875rem;
+  width: 6.25rem;
   position: relative;
   border-radius: var(--br-41xl);
   background-color: var(--color-lightgoldenrodyellow);
@@ -351,7 +343,7 @@
   line-height: 160%;
   font-weight: 500;
   display: inline-block;
-  min-width: 29px;
+  min-width: 1.8125rem;
   z-index: 5;
 }
 .details,
@@ -364,8 +356,7 @@
 .percentage {
   border-radius: var(--br-41xl);
   background-color: var(--color-lightgoldenrodyellow);
-  padding: var(--padding-5xs) var(--padding-16xl) var(--padding-6xs)
-    var(--padding-17xl);
+  padding: var(--padding-5xs) var(--padding-16xl) var(--padding-6xs) var(--padding-17xl);
   z-index: 4;
 }
 .details {
@@ -378,14 +369,14 @@
   display: none;
 }
 .frameInner {
-  height: 28.9px;
-  width: 145.9px;
-  filter: blur(54px);
+  height: 1.80625rem;
+  width: 9.11875rem;
+  filter: blur(3.375rem);
   background-color: var(--color-mediumslateblue);
 }
 .rectangleDiv {
-  height: 57.9px;
-  width: 169.9px;
+  height: 3.61875rem;
+  width: 10.61875rem;
   background: linear-gradient(105.5deg, #545ae7, #393fcf);
 }
 .export {
@@ -396,7 +387,7 @@
   color: var(--color-white);
   text-align: left;
   display: inline-block;
-  min-width: 69px;
+  min-width: 4.3125rem;
   z-index: 2;
 }
 .rectangleContainer {
@@ -418,7 +409,7 @@
   align-items: flex-start;
 }
 .scoreDetailsInner {
-  width: 169.9px;
+  width: 10.61875rem;
   flex-direction: column;
   justify-content: flex-start;
   padding: var(--padding-29xl-9) 0 0;
@@ -432,7 +423,7 @@
   color: var(--color-seagreen);
 }
 .scoreList {
-  width: 396.8px;
+  width: 24.8rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -460,7 +451,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   gap: var(--gap-5xl);
-  min-width: 284px;
+  min-width: 17.75rem;
   color: var(--color-steelblue);
 }
 .students {
@@ -478,42 +469,42 @@
   z-index: 3;
 }
 .gradebookTitleItem {
-  width: 158.8px;
-  height: 158.5px;
-  top: -60.9px;
-  left: -46px;
+  width: 9.925rem;
+  height: 9.90625rem;
+  top: -3.80625rem;
+  left: -2.875rem;
 }
 .gradebookTitleInner {
-  width: 120.9px;
-  height: 120.7px;
-  top: 28.9px;
-  right: -44.6px;
+  width: 7.55625rem;
+  height: 7.54375rem;
+  top: 1.80625rem;
+  right: -2.7875rem;
 }
 .backgroundChild {
   position: absolute;
   height: 100%;
   top: 0;
   bottom: 0;
-  left: 23px;
+  left: 1.4375rem;
   border-radius: var(--br-xl);
   background-color: var(--color-lavender-100);
-  width: 288.9px;
+  width: 18.05625rem;
 }
 .backgroundItem {
   position: absolute;
-  top: 131.7px;
+  top: 8.23125rem;
   left: 0;
-  width: 82.2px;
-  height: 34.8px;
+  width: 5.1375rem;
+  height: 2.175rem;
   z-index: 2;
 }
 .background {
-  width: 311.9px;
-  height: 207.6px;
+  width: 19.49375rem;
+  height: 12.975rem;
   position: absolute;
   margin: 0 !important;
-  bottom: -19.9px;
-  left: -43px;
+  bottom: -1.24375rem;
+  left: -2.6875rem;
 }
 .gradebookHeaderParent,
 .gradebookTitle {
@@ -524,7 +515,7 @@
 }
 .gradebookTitle {
   align-self: stretch;
-  box-shadow: 0 10px 48px rgba(40, 43, 110, 0.1);
+  box-shadow: 0 0.625rem 3rem rgba(40, 43, 110, 0.1);
   border-radius: var(--br-xl);
   background-color: var(--color-white);
   align-items: flex-start;
@@ -541,8 +532,8 @@
   gap: var(--gap-3xs);
 }
 .gradebookImageChild {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   position: relative;
   border-radius: 50%;
   background-color: var(--color-firebrick-100);
@@ -566,7 +557,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-base-9);
-  min-width: 490px;
+  min-width: 30.625rem;
   font-size: var(--font-size-3xl);
   color: var(--color-cadetblue);
 }
@@ -575,14 +566,14 @@
   justify-content: center;
 }
 .frameParent {
-  width: 1536.3px;
+  width: 90.975rem;
   align-items: flex-end;
   gap: var(--gap-118xl);
 }
 .landingInner {
-  width: 1836.3px;
+  width: 100vw;
   align-items: flex-start;
-  padding: 0 var(--padding-xl) var(--padding-161xl);
+  padding: 0 var(--padding-xl) var(--padding-xl);
   box-sizing: border-box;
   flex-shrink: 0;
   text-align: left;
@@ -590,7 +581,7 @@
   color: var(--color-firebrick-100);
   font-family: var(--font-poppins);
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
   .frameWrapper {
     flex: 1;
   }
@@ -599,10 +590,10 @@
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .classManagementToolsContainer {
     font-size: var(--font-size-13xl);
-    line-height: 51px;
+    line-height: 3.1875rem;
   }
   .frameWrapper {
     min-width: 100%;
@@ -629,18 +620,18 @@
     gap: var(--gap-15xl);
   }
   .landingInner {
-    padding-bottom: var(--padding-98xl);
+    padding-bottom: var(--padding-xl);
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .classManagementToolsContainer {
     font-size: var(--font-size-5xl);
-    line-height: 38px;
+    line-height: 2.375rem;
   }
   .classProvidesTools {
     font-size: var(--font-size-lg);
-    line-height: 32px;
+    line-height: 2rem;
   }
   .frameWrapper {
     padding-bottom: var(--padding-33xl);
@@ -652,7 +643,7 @@
   .name3,
   .name4 {
     font-size: var(--font-size-lg);
-    line-height: 28px;
+    line-height: 1.75rem;
   }
   .export {
     font-size: var(--font-size-lg);
