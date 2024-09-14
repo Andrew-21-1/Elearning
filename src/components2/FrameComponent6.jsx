@@ -19,7 +19,7 @@ const FrameComponent6 = ({ className = '' }) => {
             <div className={styles.contentContainer}>
               <div className={styles.exampleContainer}>
                 <div className={styles.exampleContent}>
-                  <div className={styles.frameWrapper1}>
+                  <div style={{ width: '100%' }}>
                     <img className={styles.frameChild1} loading="lazy" alt="" src="/group-122.svg" />
                   </div>
                 </div>

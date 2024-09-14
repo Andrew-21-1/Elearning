@@ -7,7 +7,7 @@ const FrameComponent5 = ({ className = '' }) => {
     <section className={[styles.landingInner, className].join(' ')}>
       <div className={styles.deeplyNestedMaskParent}>
         <div className={styles.deeplyNestedMask}>
-          <div className={styles.frameWrapper1}>
+          <div style={{ width: '100%' }}>
             <img loading="lazy" alt="" src="/Group 455.png" />
           </div>
         </div>
@@ -53,8 +53,7 @@ const FrameComponent5 = ({ className = '' }) => {
                 <div className={styles.featureContainer1}>
                   <div className={styles.featureContent1}>
                     <div className={styles.elementContainer}>
-                      <div className={styles.seventhImageParent}>
-                        <div className={styles.seventhImage} />
+                      <div style={{ width: '100%' }}>
                         <img className={styles.users2Icon} alt="" src="/users-2.svg" />
                       </div>
                     </div>
