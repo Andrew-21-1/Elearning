@@ -3,6 +3,7 @@
 }
 .toolsForTeachersContainer {
   margin: 0;
+  width: 30rem;
   position: relative;
   font-size: inherit;
   line-height: 160%;
@@ -393,6 +394,7 @@
   font-family: inherit;
   display: inline-block;
   max-width: 100%;
+  color: var(--color-black);
 }
 .assessmentsQuizzesTestsParent {
   width: 20rem;

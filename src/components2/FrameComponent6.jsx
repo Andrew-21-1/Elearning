@@ -19,7 +19,7 @@ const FrameComponent6 = ({ className = '' }) => {
             <div className={styles.contentContainer}>
               <div className={styles.exampleContainer}>
                 <div className={styles.exampleContent}>
-                  <div style={{ width: '100%' }}>
+                  <div className={styles.frameWrapper1}>
                     <img className={styles.frameChild1} loading="lazy" alt="" src="/group-122.svg" />
                   </div>
                 </div>
@@ -33,12 +33,12 @@ const FrameComponent6 = ({ className = '' }) => {
               <img className={styles.frameChild1} loading="lazy" alt="" src="/Group 92.png" />
             </div>
             <div className={styles.toolsForTeachersAndLearnerParent}>
+              <h2 className={styles.assessmentsQuizzesTestsContainer}>
+                <span>{`Assessments, `}</span>
+                <span className={styles.quizzes}>Quizzes</span>
+                <span>, Tests</span>
+              </h2>
               <div style={{ justifyContent: 'left' }}>
-                <h2 className={styles.assessmentsQuizzesTestsContainer}>
-                  <span>{`Assessments, `}</span>
-                  <span className={styles.quizzes}>Quizzes</span>
-                  <span>, Tests</span>
-                </h2>
                 <div className={styles.classHasA}>Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.</div>
               </div>
             </div>

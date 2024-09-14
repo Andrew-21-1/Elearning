@@ -8,11 +8,25 @@
 .brand {
   justify-content: center;
 }
-.navbar-nav {
+.navbar-foot {
   display: flex;
   flex-direction: row !important;
   align-items: center; /* Center items horizontally */
   width: 100%; /* Full width to ensure centering */
+  justify-content: center !important;
+  align-items: center;
+}
+.separator {
+  color: white; /* Adjust color to match your design */
+  margin: 0 10px; /* Adjust spacing as needed */
+}
+.navbar-foot ul, /* Adjust selector to target the list containing your navbar items */
+.navbar-foot li {
+  list-style: none; /* Removes default list item markers */
+}
+
+.navbar-foot li::marker {
+  display: none; /* Specifically hides the ::marker pseudo-element */
 }
 footer p {
   margin: 0;
@@ -49,7 +63,7 @@ p {
   letter-spacing: 0.055rem;
 }
 @media (max-width: 600px) {
-  .navbar-nav {
+  .navbar-foot {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
@@ -57,7 +71,7 @@ p {
 
 /* Tablet Styles (600px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
-  .navbar-nav {
+  .navbar-foot {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
@@ -65,7 +79,7 @@ p {
 
 /* Desktop Styles (900px and above) */
 @media (min-width: 901px) {
-  .navbar-nav {
+  .navbar-foot {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }

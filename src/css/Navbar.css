@@ -90,7 +90,7 @@
 @media (max-width: 600px) {
   .navbar-collapse {
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Align items to the start */
+    align-items: flex-start; /* Align items to the start */
   }
 
   .nav-link {
@@ -115,8 +115,7 @@
 /* Tablet Styles (600px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
   .navbar-collapse {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Align items to the start */
+    flex-direction: row; /* Align items horizontally */
   }
 
   .nav-link {
@@ -141,8 +140,7 @@
 /* Desktop Styles (900px and above) */
 @media (min-width: 901px) {
   .navbar-collapse {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Align items to the start */
+    flex-direction: row; /* Default layout for larger screens */
   }
 
   .nav-link {

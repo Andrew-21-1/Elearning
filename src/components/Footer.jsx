@@ -1,34 +1,34 @@
 import React from 'react';
 import '../css/Footer.css';
 import logo from '../assets/images/logo.png'; // Replace with your asset path
-import { MDBNavbarBrand, MDBNavbarItem, MDBNavbarLink, MDBNavbarNav, MDBFooter, MDBContainer, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
+import { MDBNavbarBrand, MDBNavbarItem, MDBNavbarLink, MDBFooter, MDBContainer, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
 
 const Footer = () => {
   return (
     <MDBFooter className="text-center footer">
       <MDBNavbarBrand href="#" className="brand">
         <img style={{ height: 'auto', width: '15rem' }} src={logo} alt="Logo" />
-      </MDBNavbarBrand>{' '}
-      <MDBContainer className="navbar-nav">
-        <MDBNavbarNav>
+      </MDBNavbarBrand>
+      <MDBContainer className="navbar-foot">
+        <div className="navbar-foot">
           <MDBNavbarItem>
             <MDBNavbarLink active aria-current="page" href="#">
               Careers
             </MDBNavbarLink>
           </MDBNavbarItem>
-          |
+          <span className="separator"> | </span>
           <MDBNavbarItem>
             <MDBNavbarLink active aria-current="page" href="#">
               Privacy Policy
             </MDBNavbarLink>
           </MDBNavbarItem>
-          |
+          <span className="separator"> | </span>
           <MDBNavbarItem>
             <MDBNavbarLink active aria-current="page" href="#">
               Terms & Conditions
             </MDBNavbarLink>
           </MDBNavbarItem>
-        </MDBNavbarNav>
+        </div>
       </MDBContainer>
       <MDBContainer className="p-4 pb-0">
         <section className="mb-4">
