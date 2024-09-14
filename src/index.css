@@ -14,7 +14,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
 a {
   font-weight: 500;
   color: #646cff;

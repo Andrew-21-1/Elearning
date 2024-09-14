@@ -20,7 +20,16 @@ const ClassroomSoftware = ({ className = '' }) => {
             </div>
           </div>
           <div className={styles.imgBody}>
-            <img className={styles.discussionsHeaderChild} loading="lazy" alt="" src="/group-17.svg" />
+            <div className="ratio ratio-16x9">
+              <iframe
+                className="shadow-1-strong rounded"
+                src="https://www.youtube.com/embed/UCvAZ-JscdE"
+                title="YouTube video"
+                allowFullScreen
+                data-gtm-yt-inspected-2340190_699="true"
+                id="388567449"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>

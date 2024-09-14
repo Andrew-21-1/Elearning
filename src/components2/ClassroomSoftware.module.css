@@ -581,6 +581,7 @@
   font-size: var(--font-size-4xs-4);
   color: var(--color-white);
   font-family: var(--font-nunito-sans);
+  margin-bottom: 3rem;
 }
 @media screen and (max-width: 81.25rem) {
   .discussionsHeader {

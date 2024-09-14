@@ -42,6 +42,27 @@ const Landing = () => {
       <Container>
         <ClassroomSoftware style={{ marginTop: '10px', display: 'flex' }} />
       </Container>
+      <FrameComponent4 />
+
+      <div className={styles.mdaTitle}>
+        <h1 className={styles.whatIsMdaContainer}>
+          <span>{`What is `}</span>
+          <span className={styles.cloudSoftware}>MDA</span>
+          <span className={styles.span1}></span>
+        </h1>
+      </div>
+      <section className={styles.myDynamicAcademics}>
+        <div className={styles.myDynamicAcademics1}>
+          MY DYNAMIC ACADEMICS is a platform that allows students to learn online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates;
+          grade results and provide students with feedback all in one place.
+        </div>
+      </section>
+      <section className={styles.instructorsStudents}>
+        <div className={styles.frameParent}>
+          <GroupComponent3 />
+          <GroupComponent4 />
+        </div>
+      </section>
       <section className={styles.statsWrapper}>
         <h1 className={styles.ourSuccess}>Our Success</h1>
         <div className={styles.stats}>
@@ -78,35 +99,6 @@ const Landing = () => {
               <h3 className={styles.totalSuccess}>Years of experience</h3>
             </div>
           </div>
-        </div>
-      </section>
-      <div className={styles.featuresCloudSoftware}>
-        <h2 className={styles.allInOneCloudSoftwareContainer}>
-          <span>{`All-In-One `}</span>
-          <span className={styles.cloudSoftware}>Cloud Software.</span>
-        </h2>
-      </div>
-      <section className={styles.totcSoftware}>
-        <div className={styles.totcIsOne}>TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.</div>
-      </section>
-      <FrameComponent4 />
-      <div className={styles.mdaTitle}>
-        <h1 className={styles.whatIsMdaContainer}>
-          <span>{`What is `}</span>
-          <span className={styles.cloudSoftware}>MDA</span>
-          <span className={styles.span1}></span>
-        </h1>
-      </div>
-      <section className={styles.myDynamicAcademics}>
-        <div className={styles.myDynamicAcademics1}>
-          MY DYNAMIC ACADEMICS is a platform that allows students to learn online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates;
-          grade results and provide students with feedback all in one place.
-        </div>
-      </section>
-      <section className={styles.instructorsStudents}>
-        <div className={styles.frameParent}>
-          <GroupComponent3 />
-          <GroupComponent4 />
         </div>
       </section>
       <div className={styles.featuresCloudSoftware1}>

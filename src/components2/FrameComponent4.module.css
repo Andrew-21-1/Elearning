@@ -56,8 +56,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-103xl) var(--padding-34xl) var(--padding-31xl)
-    var(--padding-35xl);
+  padding: var(--padding-103xl) var(--padding-34xl) var(--padding-31xl) var(--padding-35xl);
   box-sizing: border-box;
   position: relative;
   gap: var(--gap-5xl);
@@ -102,8 +101,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-103xl) var(--padding-17xl) var(--padding-31xl)
-    var(--padding-18xl);
+  padding: var(--padding-103xl) var(--padding-34xl) var(--padding-31xl) var(--padding-35xl);
   box-sizing: border-box;
   position: relative;
   gap: var(--gap-5xl);
@@ -132,10 +130,9 @@
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
-  padding: var(--padding-130xl) var(--padding-47xl) var(--padding-31xl)
-    var(--padding-46xl);
+  padding: var(--padding-103xl) var(--padding-34xl) var(--padding-31xl) var(--padding-35xl);
   box-sizing: border-box;
   position: relative;
   gap: var(--gap-23xl);
@@ -205,17 +202,18 @@
     line-height: 29px;
   }
   .invoicingControlSchedule1 {
-    padding-top: var(--padding-60xl);
-    padding-bottom: var(--padding-13xl);
+    padding: var(--padding-60xl) var(--padding-xl) var(--padding-13xl);
+
     box-sizing: border-box;
     min-width: 100%;
+    flex: 1;
   }
   .customerTracking {
     font-size: var(--font-size-lg);
   }
   .invoicingControlSchedule2 {
-    gap: var(--gap-2xl);
-    padding: var(--padding-78xl) var(--padding-xl) var(--padding-13xl);
+    padding: var(--padding-60xl) var(--padding-xl) var(--padding-13xl);
+
     box-sizing: border-box;
     min-width: 100%;
     flex: 1;

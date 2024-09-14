@@ -3,7 +3,9 @@
   background-color: #bf4628 !important;
   width: 100%;
 }
-
+.navbar-nav {
+  justify-content: center;
+}
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
@@ -15,8 +17,30 @@
   max-width: 100%; /* Ensure the image scales down within its container */
   height: auto; /* Maintain aspect ratio */
 }
+.collapse-content {
+  width: 100%;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center text inside navbar items */
+  width: 100%;
+}
 
+/* Ensure that navbar items are centered */
+.navbar-nav {
+  display: flex;
+  flex-direction: column; /* Stack items vertically in collapsed state */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Full width to ensure centering */
+}
+/* Optional: Ensure the dropdown menu items are centered in the collapsed view */
+.navbar-nav .dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%);
+}
 .nav-link {
+  width: max-content;
   color: #612d29;
   font-family: 'Livvic';
   font-size: 1.375rem;

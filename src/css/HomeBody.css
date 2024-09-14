@@ -6,7 +6,6 @@
   justify-content: center;
   color: white;
   text-align: left;
-  width: 100vw; /* Ensures the container spans the full width of the viewport */
   margin: 0;
   padding: 0;
 }
