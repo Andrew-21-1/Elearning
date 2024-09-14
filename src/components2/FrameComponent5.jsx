@@ -6,10 +6,8 @@ const FrameComponent5 = ({ className = '' }) => {
   return (
     <section className={[styles.landingInner, className].join(' ')}>
       <div className={styles.deeplyNestedMaskParent}>
-        <div className={styles.deeplyNestedMask}>
-          <div style={{ width: '100%' }}>
-            <img loading="lazy" alt="" src="/Group 455.png" />
-          </div>
+        <div style={{ width: '100%' }}>
+          <img loading="lazy" alt="" src="/Group 455.png" />
         </div>
         <div className={styles.frameWrapper}>
           <div className={styles.frameGroup}>
@@ -51,12 +49,8 @@ const FrameComponent5 = ({ className = '' }) => {
                   <div className={styles.teachersDontGet}>TA’s and presenters can be moved to the front of the class.</div>
                 </div>
                 <div className={styles.featureContainer1}>
-                  <div className={styles.featureContent1}>
-                    <div className={styles.elementContainer}>
-                      <div style={{ width: '100%' }}>
-                        <img className={styles.users2Icon} alt="" src="/users-2.svg" />
-                      </div>
-                    </div>
+                  <div style={{ width: '100%' }}>
+                    <img className={styles.users2Icon} alt="" src="/users-2.svg" />
                   </div>
                   <div className={styles.teachersDontGet}>Teachers can easily see all students and class data at one time.</div>
                 </div>
