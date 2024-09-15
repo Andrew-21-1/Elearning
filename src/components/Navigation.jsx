@@ -31,7 +31,7 @@ const Navigation = () => {
     switch (location.pathname) {
       case '/home':
         return 'navbar-home';
-      case '/curriculum/':
+      case '/curriculum':
         return 'navbar-curriculum';
       default:
         return 'navbar-home'; // Fallback class
@@ -64,7 +64,7 @@ const Navigation = () => {
         >
           <MDBNavbarNav className="navbar-nav">
             <MDBNavbarItem>
-              <MDBNavbarLink link href="/home/">
+              <MDBNavbarLink link href="/home">
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -74,23 +74,23 @@ const Navigation = () => {
                   Curriculum
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem link href="/curriculum/">
+                  <MDBDropdownItem link href="/curriculum">
                     Literacy
                   </MDBDropdownItem>
-                  <MDBDropdownItem link href="/curriculum/">
+                  <MDBDropdownItem link href="/curriculum">
                     Math
                   </MDBDropdownItem>
-                  <MDBDropdownItem link href="/curriculum/">
+                  <MDBDropdownItem link href="/curriculum">
                     Science
                   </MDBDropdownItem>
-                  <MDBDropdownItem link href="/curriculum/">
+                  <MDBDropdownItem link href="/curriculum">
                     Social Studies
                   </MDBDropdownItem>
-                  <MDBDropdownItem link href="/curriculum/">
+                  <MDBDropdownItem link href="/curriculum">
                     Professional Studies
                   </MDBDropdownItem>
                   <MDBDropdownItem divider />
-                  <MDBDropdownItem link href="/curriculum/">
+                  <MDBDropdownItem link href="/curriculum">
                     More
                   </MDBDropdownItem>
                 </MDBDropdownMenu>
