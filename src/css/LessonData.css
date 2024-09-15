@@ -1,0 +1,108 @@
+.lesson-data {
+  background-color: #fff;
+  padding: 50px;
+}
+.lesson-data-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.lesson-data-col {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.lesson-data-btn {
+  font-family: "Poppins";
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 10px 20px;
+  border: 0px;
+}
+.lesson-data-btn.active {
+  background-color: #bf4628;
+  color: white;
+}
+
+.lesson-data-btn.inactive {
+  background-color: rgb(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0, 0.4);
+}
+
+/* Hover effect for active button */
+.lesson-data-btn.active:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0, 0.4);
+}
+
+/* Hover effect for inactive button */
+.lesson-data-btn.inactive:hover {
+  background-color: #bf4628; /* Slightly darker grey for hover */
+  color: white;
+}
+
+.lesson-data-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 40px !important;
+  width: 100%;
+  background-color: rgb(157, 204, 255, 0.4);
+  border-radius: 30px;
+  height: ;
+}
+.lesson-save-btn {
+  font-family: "Poppins";
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 10px 20px;
+  border: 0px;
+  background-color: #bf4628;
+  color: white;
+  width: 100%;
+}
+.lesson-data-row2 {
+  justify-content: space-between;
+}
+.lesson-data-col2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px !important;
+  width: 100%;
+}
+
+hr.rounded {
+  border-top: 3px solid #696984 !important;
+  border-radius: 5px;
+}
+
+.lesson-data-title {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #000;
+  font-family: "Poppins";
+  padding-bottom: 20px;
+}
+.lesson-data-description {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #696984;
+  font-family: "Poppins";
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.lesson-data-save {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #bf4628;
+  font-family: "Poppins";
+  text-align: left;
+  padding-bottom: 10px;
+  display: none;
+}

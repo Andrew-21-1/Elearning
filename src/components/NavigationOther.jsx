@@ -16,8 +16,8 @@ import {
   MDBNavbarNav,
   MDBInputGroup,
 } from "mdb-react-ui-kit";
-import logo from "../assets/images/logo.png"; // Replace with your asset path
-import "../css/Navbar.css";
+import logo2 from "../assets/images/logo2.png"; // Replace with your asset path
+import "../css/NavbarOther.css";
 
 const Navigation = () => {
   const handleLogoutRedirect = () => {
@@ -29,14 +29,14 @@ const Navigation = () => {
     <MDBNavbar
       expand="lg"
       sticky="top"
-      bgColor="#bf4628"
+      bgColor="#ffffff"
       style={{ boxShadow: "none" }}
     >
       <MDBContainer className="navbar-container">
         <MDBNavbarBrand href="#">
           <img
             style={{ height: "auto", width: "10rem" }}
-            src={logo}
+            src={logo2}
             alt="Logo"
           />
         </MDBNavbarBrand>
@@ -61,13 +61,18 @@ const Navigation = () => {
         >
           <MDBNavbarNav className="navbar-nav">
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
+              <MDBNavbarLink aria-current="page" href="#">
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBDropdown>
-                <MDBDropdownToggle tag="a" className="nav-link" role="button">
+                <MDBDropdownToggle
+                  active
+                  tag="a"
+                  className="nav-link"
+                  role="button"
+                >
                   Curriculum
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>

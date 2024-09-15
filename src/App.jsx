@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import RegisterPage from "./components/RegisterPage";
 import HomePage from "./components/HomePage";
+import CurriculumPage from "./components/CurriculumPage";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/home" element={<HomePage />} />
+          <Route path="/curriculum" element={<CurriculumPage />} />
         </Routes>
       </Router>
     </I18nextProvider>
