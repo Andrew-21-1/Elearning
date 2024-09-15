@@ -1,0 +1,152 @@
+.file-upload {
+  background-color: #d27e69;
+  padding: 50px;
+}
+
+.lesson-order-title {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #000;
+  font-family: 'Poppins';
+  padding-bottom: 20px;
+}
+
+.parent-component {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.img-card {
+  padding: 10px;
+}
+.text-card {
+  padding: 20px;
+}
+.card-info {
+  font-size: 14px;
+}
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.draggable-item {
+  width: 20rem !important;
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin: 5px 0;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: move;
+  border-radius: 30px;
+}
+
+.item-component {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  gap: 10px;
+}
+
+.item-component button {
+  margin-left: 10px;
+  background-color: transparent;
+  border: transparent;
+}
+.card-title {
+  color: #252641;
+  font-size: 24px;
+}
+.card-body {
+  color: #696984;
+  font-size: 18px;
+  text-align: left;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row !important;
+  background-color: #d27e69 !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center !important;
+}
+.save-button {
+  background-color: #fff; /* Adjust color as needed */
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.save-button:hover {
+  background-color: #bf4628; /* Darker shade for hover effect */
+  color: #fff;
+}
+.draggable-list-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.draggable-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.draggable-list.view-all {
+  flex-wrap: nowrap;
+  display: block;
+  overflow-x: auto;
+}
+
+.draggable-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  flex: 0 0 auto;
+  width: 200px; /* Adjust based on your design */
+}
+
+.dragging {
+  background: #f0f0f0;
+  cursor: grabbing;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ccc;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-button.left {
+  left: 0;
+}
+
+.scroll-button.right {
+  right: 0;
+}
+
+.view-all-button {
+  margin-top: 20px;
+  display: block;
+}

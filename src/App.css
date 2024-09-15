@@ -1,19 +1,22 @@
 @font-face {
-  font-family: "Poppins";
-  src: url("../assets/fonts/Poppins.ttf");
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins.ttf');
 }
 
 @font-face {
-  font-family: "Livvic";
-  src: url("../assets/fonts/Livvic.ttf");
+  font-family: 'Livvic';
+  src: url('../assets/fonts/Livvic.ttf');
 }
 @font-face {
-  font-family: "Be Vietnam";
-  src: url("../assets/fonts/BeVietnam.ttf");
+  font-family: 'Be Vietnam';
+  src: url('../assets/fonts/BeVietnam.ttf');
 }
 
 @font-face {
-  font-family: "Nunito Sans";
-  src: url("../assets/fonts/NunitoSans.ttf");
+  font-family: 'Nunito Sans';
+  src: url('../assets/fonts/NunitoSans.ttf');
 }
 
+/* General Styling */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';

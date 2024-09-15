@@ -1,16 +1,19 @@
-import React from "react";
-import NavigationOther from "./NavigationOther";
-import FileUpload from "./FileUpload";
-import LessonData from "./LessonData";
-import Footer from "./Footer";
+import React from 'react';
+import Navigation from './Navigation';
+import FileUpload from './FileUpload';
+import LessonData from './LessonData';
+import LessonOrder from './LessonOrder';
+import ClassroomSoftware from '../components2/ClassroomSoftware';
+import Footer from './Footer';
 
 const HomePage = () => {
   return (
     <>
-      <NavigationOther />
+      <Navigation />
       <FileUpload />
       <LessonData />
-      <FileUpload />
+      <LessonOrder />
+      <ClassroomSoftware style={{ marginTop: '10px', display: 'flex' }} />
       <Footer />
     </>
   );

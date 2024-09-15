@@ -1,11 +1,13 @@
-/* General Navbar Styles */
-.navbar {
-  background-color: #bf4628 !important;
-  width: 100%;
-}
 .navbar-nav {
   justify-content: center;
 }
+.navbar-home {
+  background-color: #bf4628 !important; /* Use !important if needed */
+}
+.navbar-curriculum {
+  background-color: #fff !important; /* Use !important if needed */
+}
+
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;

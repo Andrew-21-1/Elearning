@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import {
   MDBNavbar,
   MDBContainer,
@@ -15,30 +16,32 @@ import {
   MDBIcon,
   MDBNavbarNav,
   MDBInputGroup,
-} from "mdb-react-ui-kit";
-import logo from "../assets/images/logo.png"; // Replace with your asset path
-import "../css/Navbar.css";
+} from 'mdb-react-ui-kit';
+import logo from '../assets/images/logo2.png'; // Replace with your asset path
+import '../css/Navbar.css';
 
 const Navigation = () => {
   const handleLogoutRedirect = () => {
     // Add navigation logic here
   };
   const [openNavNoTogglerSecond, setOpenNavNoTogglerSecond] = useState(false);
-
+  const location = useLocation();
+  // Determine the CSS class based on the route
+  const getNavbarClass = () => {
+    switch (location.pathname) {
+      case '/home':
+        return 'navbar-home';
+      case '/curriculum/':
+        return 'navbar-curriculum';
+      default:
+        return 'navbar-home'; // Fallback class
+    }
+  };
   return (
-    <MDBNavbar
-      expand="lg"
-      sticky="top"
-      bgColor="#bf4628"
-      style={{ boxShadow: "none" }}
-    >
+    <MDBNavbar expand="lg" sticky="top" className={getNavbarClass()} style={{ boxShadow: 'none' }}>
       <MDBContainer className="navbar-container">
         <MDBNavbarBrand href="#">
-          <img
-            style={{ height: "auto", width: "10rem" }}
-            src={logo}
-            alt="Logo"
-          />
+          <img style={{ height: 'auto', width: '10rem' }} src={logo} alt="Logo" />
         </MDBNavbarBrand>
         <MDBNavbarToggler
           type="button"
@@ -54,14 +57,14 @@ const Navigation = () => {
           navbar
           open={openNavNoTogglerSecond}
           style={{
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
           }}
         >
           <MDBNavbarNav className="navbar-nav">
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
+              <MDBNavbarLink link href="/home/">
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -105,13 +108,7 @@ const Navigation = () => {
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag="a" className="nav-link" role="button">
-                  <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg"
-                    class="rounded-circle z-depth-0"
-                    alt="avatar image"
-                    style={{ width: "2rem", marginRight: "0.5rem" }}
-                  />{" "}
-                  Name
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0" alt="avatar image" style={{ width: '2rem', marginRight: '0.5rem' }} /> Name
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem link href="#profile">
