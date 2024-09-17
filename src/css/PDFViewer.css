@@ -1,0 +1,81 @@
+/* src/css/App.css */
+.pdf-viewer-container {
+  position: relative;
+}
+
+.pdf-navigation {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pdf-navigation-button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 'none';
+  border-radius: '10px';
+  margin-bottom: '10px';
+  font-size: '0.8rem';
+  font-weight: '600';
+  font-family: 'Poppins';
+  background-color: rgba(191, 70, 40, 1) !important;
+  box-shadow: none !important;
+}
+
+.pdf-navigation span {
+  font-size: 16px;
+}
+
+/* Full-Screen Styles */
+.full-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.full-screen .pdf-content {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Ensure that the content is hidden */
+}
+
+.full-screen .pdf-content.overlay {
+  overflow: scroll; /* Allow scrolling */
+  z-index: 9999;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.full-screen .overlay-controls {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 9999;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.full-screen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling outside the overlay */
+  z-index: 9999;
+}

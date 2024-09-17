@@ -33,6 +33,8 @@ const Navigation = () => {
         return 'navbar-home';
       case '/curriculum':
         return 'navbar-curriculum';
+      case '/resources':
+        return 'navbar-curriculum';
       default:
         return 'navbar-home'; // Fallback class
     }
@@ -97,7 +99,9 @@ const Navigation = () => {
               </MDBDropdown>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#">Resources</MDBNavbarLink>
+              <MDBNavbarLink link href="/resources">
+                Resources
+              </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink href="#">Contact us</MDBNavbarLink>
