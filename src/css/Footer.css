@@ -1,5 +1,11 @@
-.footer {
+.footer-home {
   background-color: #bf4628;
+  padding: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+}
+.footer-curriculum {
+  background-color: #d27e69 !important; /* Use !important if needed */
   padding: 1.25rem;
   color: #ffffff;
   text-align: center;
@@ -39,7 +45,7 @@ li::marker {
   align-items: center;
   justify-content: center;
   color: #612d29 !important;
-  font-family: 'Livvic';
+  font-family: "Livvic";
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400 !important;
@@ -54,7 +60,7 @@ li::marker {
 p {
   color: #b2b3cf;
   text-align: center;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 1.375rem;
   font-style: normal;
   font-weight: 400;
