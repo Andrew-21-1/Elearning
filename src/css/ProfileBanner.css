@@ -1,0 +1,71 @@
+.file-upload {
+  background-color: #d27e69;
+  padding: 50px;
+}
+.file-upload-container {
+  border-radius: 63px;
+  background-color: #ffffff;
+  padding: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #612d29;
+  font-family: "Livvic";
+}
+.dropzone-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.dropzone {
+  border: 2px solid #000;
+  padding: 20px;
+  width: 50%;
+  border-radius: 60px;
+  text-align: center;
+  height: 20rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dropzone-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.profile-edit-container {
+  padding: 2rem;
+  background-color: #d27e69;
+  color: #612d29;
+  font-family: "Livvic";
+}
+
+.profile-picture-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-picture {
+  width: 100%;
+  max-width: 250px; /* Adjust for the size you want */
+  object-fit: cover;
+}
+
+.user-details-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #612d29;
+  font-family: "Livvic";
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}

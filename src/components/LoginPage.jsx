@@ -10,6 +10,8 @@ const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const [toggleType, setToggleType] = useState("student"); // Toggle between login and register
+  const [isType, setIsType] = useState(true);
 
   const handleRegisterRedirect = () => {
     navigate("/register");
@@ -21,7 +23,10 @@ const LoginPage = () => {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-
+  const handleToggleType = () => {
+    setToggleType((prev) => (prev === "student" ? "teacher" : "student"));
+    setIsType(!isType);
+  };
   return (
     <Container fluid className="login-page-container">
       <Row className="w-100">
@@ -50,6 +55,20 @@ const LoginPage = () => {
               <button className="login-btn">{t("login.login")}</button>
               <button className="register-btn" onClick={handleRegisterRedirect}>
                 {t("login.register")}
+              </button>
+            </div>
+            <div className="pill-buttons">
+              <button
+                className={`pill-button ${isType ? "active" : ""}`}
+                onClick={() => handleToggleType()}
+              >
+                Student
+              </button>
+              <button
+                className={`pill-button ${!isType ? "active" : ""}`}
+                onClick={() => handleToggleType()}
+              >
+                Teacher
               </button>
             </div>
             <div>

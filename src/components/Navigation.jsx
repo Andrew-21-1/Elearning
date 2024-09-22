@@ -126,7 +126,7 @@ const Navigation = () => {
                   Name
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem link href="#profile">
+                  <MDBDropdownItem link href="/profile">
                     <i className="fas fa-user-circle"></i> Profile
                   </MDBDropdownItem>
                   <MDBDropdownItem link href="#settings">

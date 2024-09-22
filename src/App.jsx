@@ -6,6 +6,7 @@ import HomePage from "./components/HomePage";
 import CurriculumPage from "./components/CurriculumPage";
 import LearningPage from "./components/LearningPage";
 import StudentPage from "./components/StudentPage";
+import ProfilePage from "./components/ProfilePage";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/curriculum" element={<CurriculumPage />} />
           <Route path="/resources" element={<LearningPage />} />
           <Route path="/student" element={<StudentPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </Router>
     </I18nextProvider>

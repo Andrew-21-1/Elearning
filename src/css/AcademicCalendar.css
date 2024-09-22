@@ -1,0 +1,194 @@
+.choice-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+.course-card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.choice-card-container {
+  background-color: #fff !important;
+  margin: 0px !important;
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+  padding: 30px 80px;
+}
+.choice-card-row {
+  display: flex !important;
+  flex-wrap: nowrap !important  ;
+  --mdb-gutter-x: 0rem !important;
+}
+.scrollable-row {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  padding: 20px 0;
+  margin: 0 40px; /* This creates space between the arrows */
+}
+.header-title {
+  color: #612d29;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+  letter-spacing: 0.0275rem;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+.buttons-container {
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: flex-end;
+  margin: 20px;
+}
+.course-card {
+  margin-right: 10px;
+  display: block !important;
+  background-color: #fff !important;
+}
+.course-card-footer {
+  border: none !important;
+}
+.course-card-footer-body {
+  display: flex;
+  justify-content: flex-end;
+  color: #000;
+}
+.lesson {
+  color: #000;
+  font-size: 12px;
+  font-family: "Poppins";
+}
+.card-body {
+  padding: 10px 15px !important;
+  height: 20rem !important;
+  font-family: "Poppins";
+}
+
+.course-card img {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.course-card-title {
+  color: #612d29 !important;
+  margin: 10px !important;
+}
+
+/* Arrow button styles */
+.scroll-button {
+  position: relative;
+  background-color: #000 !important;
+  border: 0px solid #ccc !important;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px !important;
+  margin: 10px;
+  box-shadow: none !important;
+}
+
+.scroll-button.left {
+  left: 0;
+}
+
+.scroll-button.right {
+  right: 0;
+}
+
+.choice-card-row-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+  margin: 20px 0px;
+  padding: 0px 50px;
+  font-family: "Poppins";
+  background-color: #d27e69;
+  border-radius: 36px;
+  gap: 20px;
+  padding: 40px;
+  color: #fff;
+}
+
+.banner-text {
+  color: #fff;
+  font-size: 14px;
+}
+
+.banner-button {
+  color: #fff;
+  font-size: 14px;
+  background-color: #612d29 !important;
+  box-shadow: none !important;
+}
+
+/* Custom event styles */
+.fc .fc-daygrid-event {
+  background-color: #bf4628 !important; /* Event background */
+  color: white !important; /* Event text color */
+  border: none !important; /* Remove border */
+}
+
+/* Button styling */
+.fc .fc-button {
+  background-color: black !important; /* Button background */
+  color: white !important; /* Button text color */
+  border: none !important; /* Remove button border */
+}
+
+.fc .fc-button:hover {
+  background-color: #252641 !important; /* Button hover state */
+}
+
+/* Title styling */
+.fc .fc-toolbar-title {
+  color: #252641 !important; /* Title font color */
+}
+
+/* Day number and header font color */
+.fc .fc-day,
+.fc th {
+  color: #252641 !important; /* Date text color */
+}
+
+/* Today's date highlight */
+.fc .fc-day-today {
+  background-color: #28bf46 !important; /* Green background for today's date */
+  color: white !important; /* Text color on today's date */
+}
+
+/* Global font color for all text in the calendar */
+.fc {
+  color: #252641 !important; /* Default font color for all text */
+}
+
+/* Global font */
+.fc .fc-scrollgrid {
+  font-family: "Poppins", sans-serif; /* Custom font family */
+}
+
+.fc-daygrid-day-number {
+  font-family: "Poppins", sans-serif; /* Custom font family */
+  color: #252641 !important; /* Title font color */
+}
+
+.fc-col-header-cell-cushion {
+  color: #252641 !important; /* Title font color */
+}
