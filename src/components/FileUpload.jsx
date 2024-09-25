@@ -11,10 +11,10 @@ function FileUpload({ handleFileUpload }) {
 
   // Configure AWS SDK v3
   const s3Client = new S3Client({
-    region: 'eu-north-1',
+    region: import.meta.env.VITE_REGION,
     credentials: {
-      accessKeyId: 'AKIA4ZPZVLVMWTX3H76W',
-      secretAccessKey: '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',
+      accessKeyId: import.meta.env.VITE_ACCESS_KEY,
+      secretAccessKey: import.meta.env.VITE_SECRET_KEY,
     },
   });
 
@@ -30,7 +30,7 @@ function FileUpload({ handleFileUpload }) {
     console.log(file);
     const hashedFileName = CryptoJS.SHA256(file.name).toString();
     const command = new PutObjectCommand({
-      Bucket: 'elearing',
+      Bucket: import.meta.env.VITE_BUCKET,
       Key: `${hashedFileName}.pdf`,
       Body: file,
       ContentType: 'application/pdf',
@@ -38,7 +38,7 @@ function FileUpload({ handleFileUpload }) {
 
     try {
       await s3Client.send(command);
-      const fileUrl = `https://elearing.s3.amazonaws.com/${hashedFileName}.pdf`;
+      const fileUrl = `https://${import.meta.env.VITE_BUCKET}.s3.amazonaws.com/${hashedFileName}.pdf`;
       handleFileUpload(fileUrl);
       console.log(fileUrl);
       // await saveUrlToDatabase(fileUrl);
