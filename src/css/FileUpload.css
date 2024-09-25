@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   color: #612d29;
-  font-family: "Livvic";
+  font-family: 'Livvic';
 }
 .dropzone-container {
   display: flex;
@@ -31,8 +31,8 @@
 
 .dropzone-text {
   display: flex;
-  flex-direction: row;
+  flex-direction: column !important;
   justify-content: center;
-  align-items: baseline;
+  align-items: center !important;
   gap: 20px;
 }

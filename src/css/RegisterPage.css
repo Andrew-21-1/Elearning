@@ -36,7 +36,7 @@
 }
 
 .login-title {
-  font-family: "Livvic", sans-serif;
+  font-family: 'Livvic', sans-serif;
   color: white;
   font-weight: 700;
   font-size: 2.3125rem;
@@ -44,7 +44,7 @@
 }
 
 .login-subtitle {
-  font-family: "Livvic", sans-serif;
+  font-family: 'Livvic', sans-serif;
   color: white;
   font-weight: 400;
   font-size: 1.5625rem;
@@ -52,7 +52,7 @@
 }
 
 .welcome-text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: black;
   font-weight: 500;
   font-size: 1rem !important;
@@ -62,7 +62,7 @@
 .welcome-description {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   font-weight: 400 !important;
   font-size: 1rem !important;
@@ -90,7 +90,7 @@
   display: flex;
 }
 .register-modal {
-  background-image: url("../assets/images/background.svg");
+  background-image: url('../assets/images/background.svg');
   width: 100% !important;
   border-radius: 2.8125rem;
 }
@@ -109,6 +109,9 @@
 .close-button {
   background-color: transparent !important;
   border: 0rem transparent !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 .login-btn2 {
   background-color: transparent !important;
@@ -157,7 +160,7 @@
   border: 0.0625rem solid transparent !important;
   border-radius: 2.5rem !important;
   height: 3.125rem !important;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 .form-control {
   padding: 1rem 1.9375rem !important;
@@ -178,7 +181,7 @@
 
 .form-label {
   color: #000;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 .form-check-input {
@@ -213,6 +216,8 @@
   background-color: #000;
   color: white;
   border-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 /* Responsive Styling */
@@ -340,4 +345,15 @@
   background-color: transparent !important;
   border-color: transparent !important;
   color: #fff !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.register-submit-btn:hover,
+.close-button:hover,
+.navigation-button:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid 1px #000;
 }

@@ -52,6 +52,8 @@
   letter-spacing: 0.0275rem;
   display: flex;
   margin: 0.9375rem;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
 .navbar-collapse {
@@ -63,6 +65,8 @@
 .navbar a:hover,
 .navbar a.active {
   color: white; /* Change to white on hover and when selected */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
 .navbar a {
@@ -85,7 +89,51 @@
   line-height: normal;
   letter-spacing: 0.0275rem;
 }
+.pill-button-register {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 9px 13px;
+  color: white;
+  font-family: 'Livvic';
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 900 !important;
+  line-height: normal;
+  -webkit-text-stroke-width: 0px !important;
+}
 
+.pill-button-login {
+  border: none;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 9px 0px;
+  color: rgba(91, 91, 91, 1);
+  font-family: 'Livvic';
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 900 !important;
+  line-height: normal;
+  -webkit-text-stroke-width: 0px !important;
+}
+.pill-button-login:hover,
+.pill-button-register:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 1px #fff;
+}
+.nav-link-button {
+  margin: 0px !important;
+  padding: 0px !important;
+}
 /* Responsive Styles */
 
 /* Mobile Styles (up to 600px) */
