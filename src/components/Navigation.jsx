@@ -19,22 +19,16 @@ import {
 } from 'mdb-react-ui-kit';
 import logo from '../assets/images/logo2.png'; // Replace with your asset path
 import '../css/Navbar.css';
-import { useAuth } from '../AuthContext';
+import { useAuth } from '../AuthContext'; // Adjust the path accordingly
 
 const Navigation = () => {
-  const { user } = useAuth();
+  const { logout, user } = useAuth();
 
   const handleLogoutRedirect = () => {
-    // Add navigation logic here
+    logout();
+    navigate('/');
   };
 
-  const handleRedirectRegister = () => {
-    navigate('/register');
-  };
-
-  const handleLoginRedirect = () => {
-    navigate('/login');
-  };
   const [openNavNoTogglerSecond, setOpenNavNoTogglerSecond] = useState(false);
   const location = useLocation();
   // Determine the CSS class based on the route
@@ -120,17 +114,18 @@ const Navigation = () => {
               {user ? (
                 <MDBDropdown>
                   <MDBDropdownToggle tag="a" className="nav-link" role="button">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0" alt="avatar image" style={{ width: '2rem', marginRight: '0.5rem' }} /> Name
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0" alt="avatar image" style={{ width: '2rem', marginRight: '0.5rem' }} />{' '}
+                    {user.fullName.split(' ')[0]}
                   </MDBDropdownToggle>
                   <MDBDropdownMenu>
                     <MDBDropdownItem link href="/profile">
                       <i className="fas fa-user-circle"></i> Profile
                     </MDBDropdownItem>
-                    <MDBDropdownItem link href="#settings">
+                    {/* <MDBDropdownItem link href="#settings">
                       <i className="fas fa-cog"></i> Settings
-                    </MDBDropdownItem>
+                    </MDBDropdownItem> */}
                     <MDBDropdownItem divider />
-                    <MDBDropdownItem link href="#logout">
+                    <MDBDropdownItem link onClick={handleLogoutRedirect}>
                       <i className="fas fa-sign-out-alt"></i> Log Out
                     </MDBDropdownItem>
                   </MDBDropdownMenu>

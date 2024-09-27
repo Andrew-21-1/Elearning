@@ -5,9 +5,10 @@ import '../css/LoginPage.css';
 import loginImage from '../assets/images/LoginImage.png';
 import { useTranslation } from 'react-i18next';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import axios from 'axios';
+import { useAuth } from '../AuthContext'; // Adjust the path accordingly
 
 const LoginPage = () => {
+  const { login } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -27,25 +28,28 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${import.meta.env.VITE_HOST}/api/v1/users/login`, {
+      const response = await fetch(`${import.meta.env.VITE_HOST}/api/v1/users/login`, {
         // Replace with your backend URL
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Accept: '*/*',
         },
         body: JSON.stringify({ email, password }),
       });
 
       if (!response.ok) {
-        throw new Error('Login failed. Please check your credentials.');
+        const data = await response.json();
+        setError(data.message);
+        return;
       }
 
       const data = await response.json();
       // Handle successful login, e.g., store token, redirect
       console.log('Login successful:', data);
-      login(data.token);
+      login(data.data.token, data.data.user);
       navigate('/'); // Redirect to homepage or dashboard
     } catch (err) {
+      console.log(err.message);
       setError(err.message);
     }
   };
@@ -64,7 +68,6 @@ const LoginPage = () => {
           <div className="login-form">
             <div>
               <h2 className="text-center mb-4 welcome-text">{t('login.welcome-text')}</h2>
-              {error && <p className="text-danger">{error}</p>}
             </div>
             <div className="login-buttons">
               <button className="login-btn">{t('login.login')}</button>
@@ -105,6 +108,8 @@ const LoginPage = () => {
                     {t('login.forgot-password')}
                   </Button>
                 </div>
+                {error && <p style={{ color: 'white' }}>{error}</p>}
+
                 <div className="login-submit-btn-container">
                   <button className="login-submit-btn" type="submit">
                     {t('login.login')}

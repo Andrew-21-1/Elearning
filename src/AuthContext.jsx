@@ -8,15 +8,17 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     if (token) {
-      // Decode the token to get user details (you can use jwt-decode library)
-      const userData = JSON.parse(atob(token.split('.')[1])); // This assumes a JWT
-      setUser(userData);
+      setToken(token);
     }
-  }, [token]);
+    if (user) {
+      setUser(user);
+    }
+  }, [token, user]);
 
-  const login = (newToken) => {
+  const login = (newToken, user) => {
     localStorage.setItem('token', newToken);
     setToken(newToken);
+    setUser(user);
   };
 
   const logout = () => {
