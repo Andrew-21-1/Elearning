@@ -72,38 +72,52 @@ const Navigation = () => {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag="a" className="nav-link" role="button">
+              {user ? (
+                <MDBDropdown>
+                  <MDBDropdownToggle tag="a" className="nav-link" role="button">
+                    Curriculum
+                  </MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    {user.coursesAssigned.map((course) => (
+                      <MDBDropdown key={course}>
+                        <MDBDropdownToggle tag="a" className="nav-link-2" role="button">
+                          {course
+                            .replace(/_/g, ' ')
+                            .toLowerCase() // Convert to lowercase
+                            .replace(/\b\w/g, (char) => char.toUpperCase())}
+                        </MDBDropdownToggle>
+                        <MDBDropdownMenu>
+                          {user.gradesAssigned.map((grade) => (
+                            <MDBDropdownItem key={grade} drop={'end'} link href={`/curriculum/${course.toLowerCase()}/grade/${grade}`}>
+                              Grade {grade}
+                            </MDBDropdownItem>
+                          ))}
+                        </MDBDropdownMenu>
+                      </MDBDropdown>
+                    ))}
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              ) : (
+                <MDBNavbarLink link href="/login">
                   Curriculum
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem link href="/curriculum">
-                    Literacy
-                  </MDBDropdownItem>
-                  <MDBDropdownItem link href="/curriculum">
-                    Math
-                  </MDBDropdownItem>
-                  <MDBDropdownItem link href="/curriculum">
-                    Science
-                  </MDBDropdownItem>
-                  <MDBDropdownItem link href="/curriculum">
-                    Social Studies
-                  </MDBDropdownItem>
-                  <MDBDropdownItem link href="/curriculum">
-                    Professional Studies
-                  </MDBDropdownItem>
-                  <MDBDropdownItem divider />
-                  <MDBDropdownItem link href="/curriculum">
-                    More
-                  </MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
+                </MDBNavbarLink>
+              )}
             </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink link href="/resources">
-                Resources
-              </MDBNavbarLink>
-            </MDBNavbarItem>
+            {user ? (
+              user.role == 'STUDENT' ? (
+                <MDBNavbarItem>
+                  <MDBNavbarLink link href="/resources">
+                    Resources
+                  </MDBNavbarLink>
+                </MDBNavbarItem>
+              ) : null
+            ) : (
+              <MDBNavbarItem>
+                <MDBNavbarLink link href="/login">
+                  Resources
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+            )}
             <MDBNavbarItem>
               <MDBNavbarLink href="#">Contact us</MDBNavbarLink>
             </MDBNavbarItem>

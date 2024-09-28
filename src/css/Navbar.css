@@ -55,7 +55,19 @@
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
 }
-
+.nav-link-2 {
+  width: max-content;
+  color: #612d29;
+  font-family: 'Livvic';
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 900 !important;
+  line-height: normal;
+  letter-spacing: 0.0275rem;
+  display: flex;
+  margin: 0.9375rem;
+  align-items: center;
+}
 .navbar-collapse {
   display: flex;
   justify-content: space-between; /* Align items properly */
@@ -210,4 +222,16 @@
     width: 6.25rem; /* Default button width for desktop */
     font-size: 0.9375rem; /* Default font size for desktop */
   }
+}
+
+.dropdown-submenu .dropdown-toggle {
+  display: block;
+}
+
+.dropdown-menu {
+  z-index: 1000; /* Keep the dropdown on top */
+}
+.nested-dropdown {
+  font: 'Poppins';
+  -webkit-text-stroke-width: 0px !important;
 }

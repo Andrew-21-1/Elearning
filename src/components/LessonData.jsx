@@ -1,33 +1,123 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useFormik } from 'formik';
 import '../css/LessonData.css';
 import { MDBContainer, MDBCol, MDBRow, MDBBtn, MDBTextArea, MDBInput } from 'mdb-react-ui-kit';
+import { Form } from 'react-bootstrap';
+import { useAuth } from '../AuthContext'; // Adjust the path accordingly
+import Select from 'react-select';
 
-function LessonData({ uploadedFileUrl }) {
-  // State to track which button is active (either 'course' or 'lesson')
-  const [activeButton, setActiveButton] = useState('course');
+function LessonData({ courses, lessons, setFile, uploadedFileUrl, grade, activeButton, setActiveButton }) {
+  const { token } = useAuth();
 
-  // Function to toggle between 'course' and 'lesson'
+  const typeOptions = [
+    { value: 'video', label: 'Video' },
+    { value: 'pdf', label: 'PDF' },
+    { value: 'text', label: 'Text' },
+
+    // Add more grades as needed
+  ];
+
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      borderColor: '#bdbdbd',
+      '&:hover': {
+        borderColor: '#bdbdbd',
+      },
+      fontFamily: 'Poppins',
+      backgroundColor: 'transparent',
+      color: 'black',
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: '#4f4f4f',
+    }),
+    placeholder: (provided) => ({
+      ...provided,
+      color: '#4f4f4f',
+    }),
+  };
+  const formikCourse = useFormik({
+    onSubmit: async (values) => {
+      try {
+        if (uploadedFileUrl) {
+          values = {
+            ...values,
+            pdfLink: uploadedFileUrl,
+          };
+        }
+        const response = await fetch(`${import.meta.env.VITE_HOST}/api/v1/courses/${courses._id}`, {
+          method: 'PUT',
+          headers: {
+            Authorization: `Bearer ${token}`, // Replace with your token
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        });
+        if (!response.ok) throw new Error('Failed to update course');
+        document.getElementById('saved_course').style.display = 'block';
+        window.location.reload();
+      } catch (error) {
+        console.error('Error updating course:', error);
+      }
+    },
+    initialValues: {
+      courseName: courses.courseName,
+      courseDescription: courses.courseDescription,
+    },
+  });
+
+  const formikLesson = useFormik({
+    initialValues: {
+      lessonTitle: '',
+      description: '',
+      lessonDuration: '',
+      type: '',
+      youtubeLink: '',
+    },
+    onSubmit: async (values) => {
+      try {
+        if (uploadedFileUrl) {
+          values = {
+            ...values,
+            pdfLink: uploadedFileUrl,
+            courseId: courses._id,
+            type: values.type.value,
+          };
+        } else {
+          values = {
+            ...values,
+            courseId: courses._id,
+            type: values.type.value,
+          };
+        }
+        console.log(values);
+        const response = await fetch(`${import.meta.env.VITE_HOST}/api/v1/lessons/`, {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${token}`, // Replace with your token
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        });
+        const data = await response.json();
+
+        if (!response.ok) throw new Error('Failed to update lesson');
+        document.getElementById('saved_lesson').style.display = 'block';
+        window.location.reload();
+      } catch (error) {
+        console.error('Error updating lesson:', error);
+      }
+    },
+  });
+
   const handleButtonClick = (button) => {
-    // If the button clicked is the same as activeButton, do nothing
     if (activeButton !== button) {
       setActiveButton(button);
+      setFile(null);
     } else {
-      if (button === 'course') {
-        setActiveButton('lesson');
-      } else {
-        setActiveButton('course');
-      }
+      setActiveButton(button === 'course' ? 'lesson' : 'course');
     }
-  };
-  const handleSaveCourse = (button) => {
-    button.preventDefault();
-    console.log(uploadedFileUrl);
-    document.getElementById('saved_course').style.display = 'block';
-  };
-  const handleSaveLesson = (button) => {
-    button.preventDefault();
-    console.log(uploadedFileUrl);
-    document.getElementById('saved_lesson').style.display = 'block';
   };
 
   return (
@@ -49,60 +139,70 @@ function LessonData({ uploadedFileUrl }) {
             </div>
             <MDBContainer className="lesson-data-content">
               {activeButton === 'course' ? (
-                <form style={{ width: '100%' }}>
+                <form style={{ width: '100%' }} onSubmit={formikCourse.handleSubmit}>
                   <MDBCol style={{ width: '50%' }}>
-                    <MDBInput id="course_name" wrapperClass="mb-4" label="Course Name" />
+                    <MDBInput id="courseName" wrapperClass="mb-4" label="Course Name" value={formikCourse.values.courseName} onChange={formikCourse.handleChange} />
                   </MDBCol>
-                  <MDBTextArea type="text" textarea id="course_description" wrapperClass="mb-8" label="Course Description" />
+                  <MDBTextArea id="courseDescription" wrapperClass="mb-8" label="Course Description" value={formikCourse.values.courseDescription} onChange={formikCourse.handleChange} />
                 </form>
               ) : (
-                <form style={{ width: '100%' }}>
+                <Form style={{ width: '100%' }} onSubmit={formikLesson.handleSubmit}>
                   <MDBCol style={{ width: '50%' }}>
-                    <MDBInput id="lesson_name" wrapperClass="mb-4" label="Lesson Name" />
+                    <MDBInput id="lessonTitle" wrapperClass="mb-4" label="Lesson Title" value={formikLesson.values.lessonTitle} onChange={formikLesson.handleChange} />
                   </MDBCol>
-
-                  <MDBTextArea type="description" textarea id="lesson_description" wrapperClass="mb-4" rows={4} label="Course Description" style={{ width: '100%' }} />
+                  <MDBCol style={{ width: '100%' }}>
+                    <MDBInput id="youtubeLink" wrapperClass="mb-4" label="Youtube Lesson Link" value={formikLesson.values.youtubeLink} onChange={formikLesson.handleChange} />
+                  </MDBCol>
+                  <MDBTextArea id="description" wrapperClass="mb-4" label="Lesson Description" value={formikLesson.values.description} onChange={formikLesson.handleChange} />
                   <MDBCol style={{ width: '50%' }}>
-                    <MDBInput type="number" id="lesson_duration" wrapperClass="mb-4" label="Course Duration (min)" />
+                    <MDBInput type="number" id="lessonDuration" wrapperClass="mb-4" label="Lesson Duration (min)" value={formikLesson.values.lessonDuration} onChange={formikLesson.handleChange} />
                   </MDBCol>
-                </form>
+                  <MDBCol style={{ width: '50%' }}>
+                    <Select
+                      options={typeOptions}
+                      classNamePrefix="select"
+                      placeholder="Select Lesson Type"
+                      menuPlacement="bottom" // This makes the dropdown appear above the input
+                      onChange={(selectedOptions) => {
+                        formikLesson.setFieldValue('type', selectedOptions);
+                      }}
+                      styles={customStyles} // Apply custom styles here
+                    />
+                  </MDBCol>
+                </Form>
               )}
             </MDBContainer>
           </MDBCol>
           <MDBCol size="md-4" className="lesson-data-col2">
-            {/* Conditionally render content based on active button */}
             {activeButton === 'course' ? (
               <div>
-                <h2 className="lesson-data-save" id="saved_course">
+                <h2 className="lesson-data-save" id="saved_course" style={{ display: 'none' }}>
                   Course saved!
                 </h2>
-
-                <button className="lesson-save-btn" onClick={handleSaveCourse} type="button">
+                <MDBBtn type="submit" className="lesson-save-btn" onClick={formikCourse.handleSubmit}>
                   Save Course
-                </button>
-                <hr class="rounded"></hr>
-                <h1 className="lesson-data-title">This Course details:</h1>
-                <p className="lesson-data-description">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-                <hr class="rounded"></hr>
-                <h1 className="lesson-data-title">Grade 8:</h1>
-                <p className="lesson-data-description">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-                <hr class="rounded"></hr>
+                </MDBBtn>
+                <hr className="rounded" />
+                <h1 className="lesson-data-title">{courses.courseName}</h1>
+                <p className="lesson-data-description">{courses.courseDescription}</p>
+                <hr className="rounded" />
+                <h1 className="lesson-data-title">Grade {grade}:</h1>
+                <p className="lesson-data-description">Class, launched less than a year ago...</p>
               </div>
             ) : (
               <div>
-                <h2 className="lesson-data-save" id="saved_lesson">
+                <h2 className="lesson-data-save" id="saved_lesson" style={{ display: 'none' }}>
                   Lesson saved!
                 </h2>
-                <button className="lesson-save-btn" onClick={handleSaveLesson} type="button">
+                <MDBBtn type="submit" className="lesson-save-btn" onClick={formikLesson.handleSubmit}>
                   Save Lesson
-                </button>
-                <hr class="rounded"></hr>
-                <h1 className="lesson-data-title">This Course details:</h1>
-                <p className="lesson-data-description">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-                <hr class="rounded"></hr>
-                <h1 className="lesson-data-title">Grade 8:</h1>
-                <p className="lesson-data-description">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-                <hr class="rounded"></hr>
+                </MDBBtn>
+                <hr className="rounded" />
+                <h1 className="lesson-data-title">This Lesson details:</h1>
+                <p className="lesson-data-description">Class, launched less than a year ago...</p>
+                <hr className="rounded" />
+                <h1 className="lesson-data-title">Grade {grade}:</h1>
+                <p className="lesson-data-description">Class, launched less than a year ago...</p>
               </div>
             )}
           </MDBCol>

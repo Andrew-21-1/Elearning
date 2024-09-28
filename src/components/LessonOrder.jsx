@@ -3,19 +3,11 @@ import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import { useNavigate } from 'react-router-dom';
 import ItemComponent from './ItemComponent'; // Import your child componentimport '../css/LessonOrder.css';
 import { MDBIcon } from 'mdb-react-ui-kit';
-function LessonOrder() {
-  const [items, setItems] = useState([
-    { id: '1', title: 'Item 1' },
-    { id: '2', title: 'Item 2' },
-    { id: '3', title: 'Item 3' },
-    { id: '4', title: 'Item 4' },
-    { id: '5', title: 'Item 5' },
-    { id: '6', title: 'Item 6' },
-    { id: '7', title: 'Item 7' },
-    { id: '8', title: 'Item 8' },
-    { id: '9', title: 'Item 9' },
-    { id: '10', title: 'Item 10' },
-  ]);
+import { useAuth } from '../AuthContext'; // Adjust the path accordingly
+
+function LessonOrder({ lessons, courses }) {
+  const { token } = useAuth();
+  const [items, setItems] = useState(lessons);
   const [initialItems, setInitialItems] = useState(items); // For comparison
   const [orderChanged, setOrderChanged] = useState(false); // Track if order changed
 
@@ -37,26 +29,26 @@ function LessonOrder() {
 
   const handleSave = async () => {
     // Prepare data to be sent
-    const reorderedData = items.map((item, index) => ({
-      id: item.id,
-      index,
-    }));
-
+    const reorderedData = items.map((item) => item._id);
+    const payload = {
+      newOrder: reorderedData,
+      courseId: courses._id,
+    };
     try {
-      // const response = await fetch('YOUR_BACKEND_API_URL/endpoint', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(reorderedData),
-      // });
+      const response = await fetch(`${import.meta.env.VITE_HOST}/api/v1/lessons/reorder/`, {
+        method: 'PUT',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
 
-      // if (!response.ok) {
-      //   throw new Error('Network response was not ok');
-      // }
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
 
-      // const result = await response.json();
-      console.log('Save successful', reorderedData);
+      window.location.reload();
     } catch (error) {
       console.error('Error saving reordered items:', error);
     }
@@ -78,8 +70,9 @@ function LessonOrder() {
             <div ref={provided.innerRef} {...provided.droppableProps} className="parent-component">
               {items.map((item, index) => (
                 <ItemComponent
-                  key={item.id}
+                  key={item._id}
                   item={item}
+                  courses={courses}
                   index={index}
                   onEdit={handleEdit}
                   dragEnabled={true} // Enable dragging globally or based on your conditions

@@ -57,11 +57,11 @@
 }
 .lesson-save-btn {
   font-family: 'Poppins';
-  border-radius: 8px;
+  border-radius: 8px !important;
   box-shadow: none;
   padding: 10px 20px;
   border: 0px;
-  background-color: #bf4628;
+  background-color: #bf4628 !important;
   color: white;
   width: 100%;
 }
@@ -99,7 +99,7 @@ hr.rounded {
 .lesson-data-save {
   font-size: 14px !important;
   font-weight: 600 !important;
-  color: #bf4628;
+  color: #bf4628 !important;
   font-family: 'Poppins';
   text-align: left;
   padding-bottom: 10px;

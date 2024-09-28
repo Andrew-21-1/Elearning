@@ -5,8 +5,7 @@ import { MDBIcon } from 'mdb-react-ui-kit';
 import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 import CryptoJS from 'crypto-js'; // Import the crypto-js library
 
-function FileUpload({ handleFileUpload }) {
-  const [file, setFile] = useState(null); // Ensure file is defined
+function FileUpload({ file, setFile, handleFileUpload, activeButton, grade, course }) {
   const [uploadResponse, setUploadResponse] = useState('');
 
   // Configure AWS SDK v3
@@ -25,22 +24,23 @@ function FileUpload({ handleFileUpload }) {
       uploadFileToS3(acceptedFiles[0]);
     }
   }, []);
+  const getExtension = (str) => {
+    return str.slice(str.lastIndexOf('.'));
+  };
 
   const uploadFileToS3 = async (file) => {
-    console.log(file);
     const hashedFileName = CryptoJS.SHA256(file.name).toString();
     const command = new PutObjectCommand({
       Bucket: import.meta.env.VITE_BUCKET,
-      Key: `${hashedFileName}.pdf`,
+      Key: `${course}/${grade}/${hashedFileName}${getExtension(file.name)}`,
       Body: file,
-      ContentType: 'application/pdf',
+      ContentType: activeButton == 'lesson' ? 'application/pdf' : 'image/*',
     });
 
     try {
       await s3Client.send(command);
-      const fileUrl = `https://${import.meta.env.VITE_BUCKET}.s3.amazonaws.com/${hashedFileName}.pdf`;
+      const fileUrl = `https://${import.meta.env.VITE_BUCKET}.s3.amazonaws.com/${course}/${grade}/${hashedFileName}${getExtension(file.name)}`;
       handleFileUpload(fileUrl);
-      console.log(fileUrl);
       // await saveUrlToDatabase(fileUrl);
     } catch (err) {
       setUploadResponse(`Error uploading file: ${err.message}`);
@@ -66,42 +66,80 @@ function FileUpload({ handleFileUpload }) {
     }
   };
 
+  const acceptTypes =
+    activeButton === 'lesson'
+      ? { 'application/pdf': [] } // Accept PDF files for lessons
+      : { 'image/*': [] }; // Accept image files for courses
+
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: { 'application/pdf': [] }, // Accept only PDF files
+    accept: acceptTypes,
     multiple: false, // Allow only one file upload
   });
-
   return (
     <section className="file-upload">
       <div className="file-upload-container">
-        <h1>Upload a PDF</h1>
-        <div className="dropzone-container">
-          <div {...getRootProps()} className="dropzone">
-            <input {...getInputProps()} />
-            {isDragActive ? (
-              <p>Drop the PDF file here...</p>
-            ) : file ? (
-              <div className="dropzone-text">
-                <div>
-                  <p style={{ textAlign: 'center' }}>{file.name}</p> {/* Show the name of the uploaded file */}
-                </div>
-                <div>
-                  <embed src={URL.createObjectURL(file)} type="application/pdf" width="100%" height="200px" style={{ marginTop: '10px' }} />
-                </div>
+        {activeButton == 'lesson' ? (
+          <div>
+            <h1>Upload a PDF</h1>
+            <div className="dropzone-container">
+              <div {...getRootProps()} className="dropzone">
+                <input {...getInputProps()} />
+                {isDragActive ? (
+                  <p>Drop the PDF file here...</p>
+                ) : file ? (
+                  <div className="dropzone-text">
+                    <div>
+                      <p style={{ textAlign: 'center' }}>{file.name}</p> {/* Show the name of the uploaded file */}
+                    </div>
+                    <div>
+                      <embed src={URL.createObjectURL(file)} type="application/pdf" width="100%" height="200px" style={{ marginTop: '10px' }} />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="dropzone-text">
+                    <div>
+                      <p>Upload a PDF Document</p>
+                    </div>
+                    <div>
+                      <MDBIcon icon="upload" style={{ fontSize: '2rem' }} fas />
+                    </div>
+                  </div>
+                )}
               </div>
-            ) : (
-              <div className="dropzone-text">
-                <div>
-                  <p>Upload a PDF Document</p>
-                </div>
-                <div>
-                  <MDBIcon icon="upload" style={{ fontSize: '2rem' }} fas />
-                </div>
-              </div>
-            )}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div>
+            <h1>Upload a Course Image</h1>
+            <div className="dropzone-container">
+              <div {...getRootProps()} className="dropzone">
+                <input {...getInputProps()} />
+                {isDragActive ? (
+                  <p>Drop the Image file here...</p>
+                ) : file ? (
+                  <div className="dropzone-text">
+                    <div>
+                      <p style={{ textAlign: 'center' }}>{file.name}</p> {/* Show the name of the uploaded file */}
+                    </div>
+                    <div style={{ height: '-webkit-fill-available' }}>
+                      <img src={URL.createObjectURL(file)} style={{ height: '15rem', marginTop: '10px' }} />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="dropzone-text">
+                    <div>
+                      <p>Upload an Image</p>
+                    </div>
+                    <div>
+                      <MDBIcon icon="upload" style={{ fontSize: '2rem' }} fas />
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
