@@ -23,7 +23,6 @@ const ItemComponent = ({ item, courses, index, onEdit }) => {
             </p>
           </div>
           <div className="text-card">
-            <h1 className="card-title">{item._id}</h1>
             <h1 className="card-title">{item.lessonTitle}</h1>
             <p className="card-body">{item.description}</p>
           </div>

@@ -4,6 +4,19 @@
   padding: 0 !important; /* Remove default padding */
   margin: 0 !important; /* Remove default margin */
 }
+
+.full-height {
+  width: 100vw !important; /* Full viewport width */
+  max-width: 100% !important; /* Remove maximum width constraint */
+  padding: 0 !important; /* Remove default padding */
+  margin: 0 !important; /* Remove default margin */
+  height: 80vh !important; /* Full height of the viewport */
+}
+
+.no-lessons-message {
+  font-size: 1.5rem; /* Adjust font size */
+  color: rgba(37, 38, 65, 1); /* Adjust color */
+}
 .sidebar {
   flex-grow: 1; /* Allows content-row to expand */
   top: 0;
@@ -12,7 +25,7 @@
   padding: 20px !important;
 }
 .sidebar-title {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: rgba(37, 38, 65, 1);
   font-weight: 600;
   margin: 20px 0;
@@ -22,6 +35,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  text-align: left;
 }
 .content {
   background-color: rgba(238, 100, 91, 0.3);
@@ -45,7 +59,7 @@
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 30px;
   margin: 0;
@@ -60,7 +74,7 @@
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   margin: 0;
 }
 .content-body {
@@ -72,7 +86,7 @@
 }
 
 .content-body-text-h2 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: rgba(37, 38, 65, 1);
   font-weight: 600;
   margin: 20px 0;
@@ -80,7 +94,7 @@
 }
 
 .content-body-text-p {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: rgba(105, 105, 132, 1);
   text-align: left;
   font-size: 18px;

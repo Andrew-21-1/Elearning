@@ -34,6 +34,8 @@ function LessonOrder({ lessons, courses }) {
       newOrder: reorderedData,
       courseId: courses._id,
     };
+    console.log(reorderedData);
+    console.log(payload);
     try {
       const response = await fetch(`${import.meta.env.VITE_HOST}/api/v1/lessons/reorder/`, {
         method: 'PUT',

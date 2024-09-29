@@ -76,7 +76,7 @@ const CurriculumPage = () => {
       });
       if (!response.ok) throw new Error('Failed to fetch lessons');
       const data = await response.json();
-      setLessons(data.data.lessons); // Ensure it's an array
+      setLessons(data.data); // Ensure it's an array
     } catch (error) {
       console.error('Error fetching lessons:', error);
     } finally {
@@ -97,6 +97,7 @@ const CurriculumPage = () => {
       const fetchData2 = async () => {
         setLoading(true); // Start loading for courses
         await fetchLessons();
+        setLoading(false);
       };
       fetchData2();
     }

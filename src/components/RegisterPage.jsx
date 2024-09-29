@@ -140,7 +140,7 @@ const RegisterPage = () => {
         if (response.ok) {
           const data = await response.json();
           console.log('Login successful:', data);
-          login(data.data.token, data.data.user);
+          login(data.data.token, data.data.user, 86400);
           navigate('/'); // Redirect to homepage or dashboard
         } else {
           const data = await response.json();

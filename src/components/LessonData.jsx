@@ -10,9 +10,12 @@ function LessonData({ courses, lessons, setFile, uploadedFileUrl, grade, activeB
   const { token } = useAuth();
 
   const typeOptions = [
-    { value: 'video', label: 'Video' },
-    { value: 'pdf', label: 'PDF' },
-    { value: 'text', label: 'Text' },
+    { value: 'Design', label: 'Design' },
+    { value: 'Development', label: 'Development' },
+    { value: 'Photography', label: 'Photography' },
+    { value: 'Acting', label: 'Acting' },
+    { value: 'Business', label: 'Business' },
+    { value: 'Marketing', label: 'Marketing' },
 
     // Add more grades as needed
   ];
@@ -91,7 +94,8 @@ function LessonData({ courses, lessons, setFile, uploadedFileUrl, grade, activeB
             type: values.type.value,
           };
         }
-        console.log(values);
+
+        console.log(token);
         const response = await fetch(`${import.meta.env.VITE_HOST}/api/v1/lessons/`, {
           method: 'POST',
           headers: {
@@ -101,7 +105,7 @@ function LessonData({ courses, lessons, setFile, uploadedFileUrl, grade, activeB
           body: JSON.stringify(values),
         });
         const data = await response.json();
-
+        console.log(data);
         if (!response.ok) throw new Error('Failed to update lesson');
         document.getElementById('saved_lesson').style.display = 'block';
         window.location.reload();

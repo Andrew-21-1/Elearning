@@ -24,6 +24,7 @@
 .text-card {
   padding: 20px;
   height: 11rem;
+  overflow: hidden;
 }
 .card-info {
   font-size: 14px;

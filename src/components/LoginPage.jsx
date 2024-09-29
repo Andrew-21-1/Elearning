@@ -46,7 +46,7 @@ const LoginPage = () => {
       const data = await response.json();
       // Handle successful login, e.g., store token, redirect
       console.log('Login successful:', data);
-      login(data.data.token, data.data.user);
+      login(data.data.token, data.data.user, 86400);
       navigate('/'); // Redirect to homepage or dashboard
     } catch (err) {
       console.log(err.message);
